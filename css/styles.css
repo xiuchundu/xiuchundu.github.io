@@ -34,7 +34,7 @@ ul,ol{
 }
 
 a{
-        font-size: 20px;
+    font-size: 26px;
 	color: #a6a6a6;
 	text-decoration: none;
 	transition: All 1s ease;
@@ -79,7 +79,7 @@ header nav ul li {
 header nav ul li a {
     color: #E7E7E7;
     display: block;
-    padding: 0 20px;
+    padding: 0 30px;
     margin-right: 10px;
     float: left;
 }
