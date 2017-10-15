@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 *{
     margin: 0;
@@ -92,11 +92,11 @@ header nav ul li a:hover, #nav_current {
 }
 
 #logo a{
-    width: 70px;
+    width: 140px;
     height: 70px;
-    margin: 0px 70px 0px 70px;
+    margin: 10px 70px 40px 30px;
     position: absolute;
-    background: url("../images/logo.jpg") no-repeat;
+    background: url("../images/logo.png") no-repeat;
     display: block;
 }
 
