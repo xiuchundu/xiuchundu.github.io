@@ -117,7 +117,7 @@ header nav ul li a:hover, #nav_current {
 /* 图片向上翻转的动画效果 */
 .info figure{
     display: inline-block;
-    width: 630px;
+    width: 1000px;
     height: 250px;
     position: relative;
     -webkit-animation: pageTop 6s ease 0.5s backwards;
@@ -140,6 +140,11 @@ header nav ul li a:hover, #nav_current {
     -moz-transition: opacity .75s ease-out;
     -o-transition: opacity .75s ease-out;
     transition: opacity .75s ease-out;
+}
+
+.info img{
+    width: 1000px;
+    height: 250px;
 }
 
 .info figure:hover figcaption {
