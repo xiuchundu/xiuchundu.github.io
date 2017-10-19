@@ -116,32 +116,30 @@ window.onload=function(){
       $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
   }
 
-  //点击class为p2的元素触发上一张照片的函数
+  // //点击class为p2的元素触发上一张照片的函数
   $(document).on("click",".p2",function(){
     previmg();
     return false;//返回一个false值，让a标签不跳转
   });
 
-  //点击class为p4的元素触发下一张照片的函数
+  // //点击class为p4的元素触发下一张照片的函数
   $(document).on("click",".p4",function(){
     nextimg();
     return false;
   });
 
- //进入页面自动开始定时器
-  var timer;
-  timer=setInterval(nextimg,4000);
+   //进入页面自动开始定时器
+    var timer=setInterval(nextimg,1000);
   //鼠标移入box时清除定时器
-  $(".box").mouseover(function(){
+  $("#box").mouseover(function(){
     clearInterval(timer);
-    alert(1);
   })
 
   //鼠标移出box时开始定时器
-  $(".box").mouseleave(function(){
-    timer=setInterval(nextimg,4000);
-     alert(2);
+  $("#box").mouseleave(function(){
+  	alert(1);
+    timer=setInterval(nextimg,1000);
   })
-
+  
  
 }

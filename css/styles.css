@@ -140,7 +140,7 @@ header nav ul li a:hover, #nav_current {
     }
 
 .next{
-    right: 0;
+    right: 0px;
     }
 
 .list li{
@@ -204,6 +204,7 @@ header nav ul li a:hover, #nav_current {
     padding-top: 4px;
     cursor: pointer;
 }
+
 .buttons span{
     display: block;
     width: 35px;
