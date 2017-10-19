@@ -111,16 +111,16 @@ header nav ul li a:hover, #nav_current {
 .box{
     margin-top: 0px;
     width: 100%;
-    height: 340px;
+    height: 220px;
     position: relative;
     }
 
 .list{
-    width: 1092px;
-    height: 300px;
+    width: 840px;   /*缩小总宽度*/
+    height: 180px;
     overflow: hidden;
     position: absolute;
-    left: 30%;
+    left: 39%;
     margin-left: -300px;
     }
 
@@ -139,11 +139,11 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
     }
 .prev{
-    left: 80px;
+    left: 10%;
 }
 
 .next{
-    right: 80px;
+    right: 15%;
     }
 
 .list li{
