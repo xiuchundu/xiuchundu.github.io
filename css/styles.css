@@ -116,12 +116,12 @@ header nav ul li a:hover, #nav_current {
     }
 
 .list{
-    width: 1200px;
+    width: 1092px;
     height: 300px;
     overflow: hidden;
     position: absolute;
-    left: 50%;
-    margin-left: -600px;
+    left: 30%;
+    margin-left: -300px;
     }
 
 .btn{
@@ -138,9 +138,12 @@ header nav ul li a:hover, #nav_current {
     background: rgba(0,255,0,.5);
     cursor: pointer;
     }
+.prev{
+    left: 80px;
+}
 
 .next{
-    right: 0px;
+    right: 80px;
     }
 
 .list li{
@@ -151,12 +154,12 @@ header nav ul li a:hover, #nav_current {
     opacity: 1;  //设置清晰度，为0时，则不可见
     transition: all 0.3s ease-out;
 }
- .list img{
-    width: 751px;
+.list img{
+    width: 400px;
     height: 300px;
     border: none;
     float: left;
-}
+    }
 .p1{
     transform:translate3d(-224px,0,0) scale(0.81);
 }
