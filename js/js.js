@@ -137,7 +137,6 @@ window.onload=function(){
 
   //鼠标移出box时开始定时器
   $("#box").mouseleave(function(){
-  	alert(1);
     timer=setInterval(nextimg,1000);
   })
   
