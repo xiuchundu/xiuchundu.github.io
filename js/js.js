@@ -54,7 +54,6 @@ window.onload=function(){
 
   //下一张
   function nextimg(){
-    alert(1);
     cArr.push(cArr[0]);
     cArr.shift();
     $(".list li").each(function(i,e){    //需要用.list li,不然容易造成问题
@@ -130,15 +129,18 @@ window.onload=function(){
   });
 
  //进入页面自动开始定时器
+  var timer;
   timer=setInterval(nextimg,4000);
   //鼠标移入box时清除定时器
   $(".box").mouseover(function(){
     clearInterval(timer);
+    alert(1);
   })
 
   //鼠标移出box时开始定时器
   $(".box").mouseleave(function(){
     timer=setInterval(nextimg,4000);
+     alert(2);
   })
 
  
