@@ -135,7 +135,7 @@ header nav ul li a:hover, #nav_current {
     color: white;
     text-decoration: none;
     text-align: center;
-    background: rgba(0,255,0,.5);
+    background: rgba(20, 20, 20, 0.8);
     cursor: pointer;
     }
 .prev{
