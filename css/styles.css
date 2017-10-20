@@ -116,19 +116,19 @@ header nav ul li a:hover, #nav_current {
     }
 
 .list{
-    width: 844px;   /*缩小总宽度*/
+    width: 848px;   /*缩小总宽度*/
     height: 180px;
     overflow: hidden;
     position: absolute;
     left: 40%;
-    margin-left: -280px;
+    margin-left: -290px;
     }
 
 .btn{
     position: absolute;
     top: 50%;
     margin-top: -50px;
-    width: 60px;
+    width: 40px;
     height: 100px;
     line-height: 100px;
     font-size: 30px;
@@ -139,11 +139,11 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
     }
 .prev{
-    left: 15%;
+    left: 13%;
 }
 
 .next{
-    right: 15%;
+    right: 13%;
     }
 
 .list li{
@@ -156,7 +156,7 @@ header nav ul li a:hover, #nav_current {
 }
 .list img{
     width: 400px;
-    height: 300px;
+    height: 180px;
     border: none;
     float: left;
     }
