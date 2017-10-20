@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-   font: 24px "微软雅黑", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+   font: 24px "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
 }
 
 P{
@@ -41,7 +41,7 @@ a{
 	-webkit-transition: All 1s ease;
 	-moz-transition: All 1s ease;
 	-ms-transition: All 1s ease;
-	-o-transition: All 1s ease; 
+	-o-transition: All 1s ease;
 }
 
 a:hover{
@@ -49,7 +49,7 @@ a:hover{
 }
 
 .blank{
-	height: 5px; 
+	height: 5px;
 	overflow: hidden;
 	width: 100%;
 	margin: auto;
@@ -65,7 +65,7 @@ header{
 }
 
 header nav{
-	margin: 0 auto; 
+	margin: 0 auto;
 	width: 1000px;
 	text-align: center;
 	padding-top: 15px;
@@ -208,12 +208,12 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
 }
 
-/*.buttons span{
-    display: block;
-    width: 35px;
-    height: 1px;
-    background: red;
-}*/
+/*.buttons span{*/
+    /*display: block;*/
+    /*width: 35px;*/
+    /*height: 2px;*/
+    /*background: red;*/
+/*}*/
 
 .red{
     display: block;
