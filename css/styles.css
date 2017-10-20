@@ -116,7 +116,7 @@ header nav ul li a:hover, #nav_current {
     }
 
 .list{
-    width: 840px;   /*缩小总宽度*/
+    width: 844px;   /*缩小总宽度*/
     height: 180px;
     overflow: hidden;
     position: absolute;
