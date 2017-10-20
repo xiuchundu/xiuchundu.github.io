@@ -219,13 +219,13 @@ header nav ul li a:hover, #nav_current {
     display: block;
     width: 35px;
     height: 2px;
-    background: red;
+    background:rgba(20, 20, 20, 0.8);
 }
 .blue{
     display: block;
     width: 35px;
     height: 2px;
-    background: blue;
+    background: #fff;
 }
 
 
