@@ -72,7 +72,7 @@ window.onload=function(){
       var myindex=$(this).index();
       var b=myindex-index;
       if(b==0){
-        return;
+        return;   //再次点击一样的，则不变
       }
       else if(b>0) {
         /*

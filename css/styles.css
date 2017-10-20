@@ -120,7 +120,7 @@ header nav ul li a:hover, #nav_current {
     height: 180px;
     overflow: hidden;
     position: absolute;
-    left: 39%;
+    left: 40%;
     margin-left: -300px;
     }
 
@@ -139,7 +139,7 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
     }
 .prev{
-    left: 10%;
+    left: 12%;
 }
 
 .next{
@@ -215,6 +215,8 @@ header nav ul li a:hover, #nav_current {
     background: red;
 }
 .blue{
+/*    width: 35px;
+    height: 1px;*/
     background: blue;
 }
 
