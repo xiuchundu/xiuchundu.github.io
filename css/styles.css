@@ -121,7 +121,7 @@ header nav ul li a:hover, #nav_current {
     overflow: hidden;
     position: absolute;
     left: 40%;
-    margin-left: -300px;
+    margin-left: -280px;
     }
 
 .btn{
@@ -139,7 +139,7 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
     }
 .prev{
-    left: 13%;
+    left: 15%;
 }
 
 .next{
