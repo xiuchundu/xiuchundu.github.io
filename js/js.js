@@ -114,6 +114,7 @@ window.onload=function(){
   //改变底下按钮的背景色
   function show(){
       $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
+  
   }
 
   // //点击class为p2的元素触发上一张照片的函数

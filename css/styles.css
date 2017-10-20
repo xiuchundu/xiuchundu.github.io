@@ -198,7 +198,7 @@ header nav ul li a:hover, #nav_current {
     left: 50%;
     margin-left: -600px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .buttons a{
     display: inline-block;
@@ -208,15 +208,23 @@ header nav ul li a:hover, #nav_current {
     cursor: pointer;
 }
 
-.buttons span{
+/*.buttons span{
     display: block;
     width: 35px;
     height: 1px;
     background: red;
+}*/
+
+.red{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: red;
 }
 .blue{
-/*    width: 35px;
-    height: 1px;*/
+    display: block;
+    width: 35px;
+    height: 2px;
     background: blue;
 }
 
