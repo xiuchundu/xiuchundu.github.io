@@ -111,13 +111,13 @@ header nav ul li a:hover, #nav_current {
 .box{
     margin-top: 0px;
     width: 100%;
-    height: 29%;
+    height: 220px;
     position: relative;
     }
 
 .list{
-    width: 62%;   /*缩小总宽度*/
-    height: 24%;
+    width: 840px;   /*缩小总宽度*/
+    height: 180px;
     overflow: hidden;
     position: absolute;
     left: 40%;
