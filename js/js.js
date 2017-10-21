@@ -11,6 +11,7 @@ function b(){
 
 $(document).ready(function(e) {
 	b();
+  lunbo();
 	$('#gotop').click(function(){
 		$(document).scrollTop(0);	
 	})
@@ -20,8 +21,8 @@ $(window).scroll(function(e){
 	b();		
 })
 
-window.onload=function(){
-	 var $a=$(".buttons a");
+function lunbo(){  //图片轮播
+	var $a=$(".buttons a");
   var $s=$(".buttons span");
   var cArr=["p7","p6","p5","p4","p3","p2","p1"];
   var index=0;
@@ -130,13 +131,13 @@ window.onload=function(){
 
    //进入页面自动开始定时器
     var timer=setInterval(nextimg,2000);
-  //鼠标移入box时清除定时器
-  $("#box").mouseover(function(){
+  //鼠标移入.list区域时清除定时器
+  $(".list").mouseover(function(){
     clearInterval(timer);
   })
 
-  //鼠标移出box时开始定时器
-  $("#box").mouseleave(function(){
+  //鼠标移出.list区域时开始定时器
+  $(".list").mouseleave(function(){
     timer=setInterval(nextimg,2000);
   })
   

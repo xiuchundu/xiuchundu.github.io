@@ -147,9 +147,15 @@ header nav ul li a:hover, #nav_current {
     left: 13%;
 }
 
+.prev:hover{   /*鼠标移到按钮上，背景色改变*/
+    background: black;
+}
 .next{
     right: 13%;
     }
+.next:hover{
+    background: black;
+}
 
 .list li{
     position: absolute;
