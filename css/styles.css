@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 *{
     margin: 0;
@@ -97,7 +97,12 @@ header nav ul li a:hover, #nav_current {
     margin: 10px 70px 40px 30px;
     position: absolute;
     background: url("../images/logo.png") no-repeat;
+    opacity: 0.7; 
     display: block;
+}
+
+#logo a:hover{
+   opacity: 1;  //鼠标移到logo上，图片变亮
 }
 
 #content{
