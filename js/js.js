@@ -129,7 +129,7 @@ window.onload=function(){
   });
 
    //进入页面自动开始定时器
-    var timer=setInterval(nextimg,4000);
+    var timer=setInterval(nextimg,2000);
   //鼠标移入box时清除定时器
   $("#box").mouseover(function(){
     clearInterval(timer);
@@ -137,7 +137,7 @@ window.onload=function(){
 
   //鼠标移出box时开始定时器
   $("#box").mouseleave(function(){
-    timer=setInterval(nextimg,4000);
+    timer=setInterval(nextimg,2000);
   })
   
  
