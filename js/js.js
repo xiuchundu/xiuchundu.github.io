@@ -8,7 +8,7 @@ function b(){
 	}
 }
 
-
+/*搞清楚为什么*/
 $(document).ready(function(e) {
 	b();
   lunbo();
