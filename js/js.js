@@ -3,6 +3,7 @@ function b(){
 	t = $(document).scrollTop();
 	if(t > h){
 		$('#gotop').show();
+
 	}else{
 		$('#gotop').hide();
 	}
