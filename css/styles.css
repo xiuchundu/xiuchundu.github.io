@@ -315,17 +315,19 @@ header nav ul li a:hover, #nav_current {
 .comments { background-position: 0 -220px; }
 /*-------------------aside侧边栏--------------------------*/
 aside { width: 310px; float: right; margin: 20px 0; }
-aside h2, footer h2 { font-size: 16px; margin-bottom: 10px; text-shadow: #000 1px 1px 1px; color: #ccc }
+aside h2, footer h2 { font-size: 22px; margin-bottom: 10px; text-shadow: #000 1px 1px 1px; color: #ccc;font-weight: bold; }
 aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px; padding: 15px; background: #222; margin-bottom: 20px; overflow: hidden; }
 .tuijian li, .clicks li { white-space: nowrap; text-overflow: ellipsis; overflow: hidden }
-.tuijian li a:hover { padding-left: 10px }
-.tuijian li span:before { content: "0"; }/* 数字列表前面统一加0  */
-.tuijian li span { margin-right: 10px; font-size: 14px; font-family: "微软雅黑"; }
-.tuijian li:nth-child(-n+3) span { width: 39px; color: #999 } /* 选择从第3个开始倒数也就是第三个前面的 */
-.tuijian li:nth-child(-n+3) strong { font-size: 24px; font-weight: normal; }
-.tuijian li:first-child span { color: #f8490b; } /* 选择第一个 */
-.tuijian li:nth-child(n+3) { line-height: 24px } /* 选择从第3个开始往后数 */
-.tuijian li:nth-child(4) { margin: 5px 0 0 0 } /* 选择第四个 */
+.tuijian li a { font-size: 20px;color:#000;  }
+.tuijian strong { font-size: 20px;color:#000;}
+
+/*.tuijian li span:before { content: "0"; }/* 数字列表前面统一加0  */*/
+/*.tuijian li span { margin-right: 10px; font-size: 14px; font-family: "微软雅黑"; }*/
+/*.tuijian li:nth-child(-n+3) span { width: 39px; color: #999 } *//* 选择从第3个开始倒数也就是第三个前面的 */
+/*.tuijian li:nth-child(-n+3) strong { font-size: 24px; font-weight: normal; }*/
+/*.tuijian li:first-child span { color: #f8490b; }*/ /* 选择第一个 */
+/*.tuijian li:nth-child(n+3) { line-height: 24px }*/ /* 选择从第3个开始往后数 */
+/*.tuijian li:nth-child(4) { margin: 5px 0 0 0 } *//* 选择第四个 */
 /* 图文并茂 */
 .toppic li img { width: 80px; float: left; margin-right: 10px; }
 .toppic ul li:nth-child(2) { margin: 15px 0; }
