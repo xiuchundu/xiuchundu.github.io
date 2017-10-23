@@ -329,35 +329,21 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 /*.tuijian li:nth-child(n+3) { line-height: 24px }*/ /* 选择从第3个开始往后数 */
 /*.tuijian li:nth-child(4) { margin: 5px 0 0 0 } *//* 选择第四个 */
 /* 图文并茂 */
-.toppic li img { width: 80px; float: left; margin-right: 10px; }
-.toppic ul li:nth-child(2) { margin: 15px 0; }
-.toppic ul li a { display: block; width: 100%; clear: both; overflow: hidden }
-.toppic li p { color: #B5783E; padding-left: 110px; margin-top: 5px; background: url(../images/icons.png) no-repeat }
-.toppic li:first-child p { background-position: 90px -263px; }
-.toppic li:nth-child(2) p { background-position: 90px -283px; }
-.toppic li:last-child p { background-position: 90px -301px; }
-/* 热门点击 */
-.clicks li { line-height: 24px; }
-.clicks li span:before { content: "【"; }
-.clicks li span:after { content: "】"; }
-.clicks li span a { padding: 0 5px; color: #366 }
-.clicks li a:hover { text-decoration: underline }
+/*.toppic li img { width: 80px; float: left; margin-right: 10px; }*/
+/*.toppic ul li:nth-child(2) { margin: 15px 0; }*/
+/*.toppic ul li a { display: block; width: 100%; clear: both; overflow: hidden }*/
+/*.toppic li p { color: #B5783E; padding-left: 110px; margin-top: 5px; background: url(../images/icons.png) no-repeat }*/
+/*.toppic li:first-child p { background-position: 90px -263px; }*/
+/*.toppic li:nth-child(2) p { background-position: 90px -283px; }*/
+/*.toppic li:last-child p { background-position: 90px -301px; }*/
+/*/!* 热门点击 *!/*/
+/*.clicks li { line-height: 24px; }*/
+/*.clicks li span:before { content: "【"; }*/
+/*.clicks li span:after { content: "】"; }*/
+/*.clicks li span a { padding: 0 5px; color: #366 }*/
+/*.clicks li a:hover { text-decoration: underline }*/
 /* search */
-.searchform { overflow: hidden; padding: 10px; }
-.searchform input { background: rgba(0, 0, 0, 0.25) url(../images/icons.png) no-repeat 3px -318px; border: 1px solid #111; width: 220px; line-height: 30px; color: #b9b9b9; padding-left: 30px; }
-/* music */
-.viny { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px; background:rgba(42,42,42,1); width: 1000px; float: left; height: 650px; margin: 40px 160px 40px 160px;overflow: hidden }
-.viny dl dd { color: #b9b9b9; line-height: 24px; }
-.art { background: url(../images/vinyl.png) no-repeat left; width: 630px; float: left; background-size: 420px; }
-.viny .art img { width: 590px; height: 490px; margin-left: 11px }
-.viny dd span { width: 12px; height: 24px; margin-right: 7px; float: left; display: block; }
-.icon-song span, .icon-artist span, .icon-album span, .icon-like span { background: url(../images/icons.png) no-repeat }
-.icon-song span { background-position: -33px -344px }
-.icon-artist span { background-position: -16px -344px }
-.icon-album span { background-position: 0 -344px }
-.icon-like span { background-position: -1px -299px; }
-.icon-like a { color: #B5783E }
-.icon-like a:hover { color: #FFF; text-decoration: underline }
-.music audio { width: 100%; padding-top: 10px }
-/*#more_music{float: right;margin-right: 30px;}
-#more_music:hover{ box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); /*设置阴影和渐变*!/}*/
+/*.searchform { overflow: hidden; padding: 10px; }*/
+/*.searchform input { background: rgba(0, 0, 0, 0.25) url(../images/icons.png) no-repeat 3px -318px; border: 1px solid #111; width: 220px; line-height: 30px; color: #b9b9b9; padding-left: 30px; }*/
+
+
