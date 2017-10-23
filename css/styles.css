@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 *{
     margin: 0;
@@ -318,7 +318,7 @@ aside { width: 310px; float: right; margin: 20px 0; }
 aside h2, footer h2 { font-size: 22px; margin-bottom: 10px; text-shadow: #000 1px 1px 1px; color: #ccc;font-weight: bold; }
 aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px; padding: 15px; background: #222; margin-bottom: 20px; overflow: hidden; }
 .tuijian li, .clicks li { white-space: nowrap; text-overflow: ellipsis; overflow: hidden }
-.tuijian li a { font-size: 20px;color:#000;  }
+.tuijian li a { font-size: 20px;color:#fff;  }
 .tuijian li a:hover { color:green;  }
 
 /*.tuijian li span:before { content: "0"; }/* 数字列表前面统一加0  */*/
