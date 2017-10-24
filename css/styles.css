@@ -10,6 +10,7 @@ body{
     color: #3F3E3C;
 	line-height:1.5;
 	background: #333;
+    cursor:url("../images/cs019_01.cur"),auto;  //自定义鼠标样式，auto不可省略
 }
 
 img{
