@@ -142,7 +142,7 @@ header nav ul li a:hover, #nav_current {
     text-decoration: none;
     text-align: center;
     background: rgba(20, 20, 20, 0.8);
-    cursor: pointer;
+    cursor: url("../images/cs019_03.cur"),auto;;
     }
 .prev{
     left: 13%;
