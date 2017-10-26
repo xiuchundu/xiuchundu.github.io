@@ -329,8 +329,10 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     margin: 40px auto;
     /*margin-right: auto;*/
     max-width: 70%;
+    height: 450px;
     background: #222;
     padding: 20px 30px 20px 30px;
+    position:relative;  /*设置相对定位*/
     font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#000;
     text-shadow: 1px 1px 1px #444;
@@ -399,12 +401,11 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     width: 40%;
 }
 .dark-matter .button {
-    background: #FFCC02;
+    background: #333;
     border: none;
-    /*float: right;*/
-    margin-right: auto;
-    margin-left: auto;
-    /*margin-right: 30%;*/
+    position:absolute;
+    right: 40%;
+    /*right: 400px;*/
     padding: 10px 25px 10px 25px;
     color: #585858;
     border-radius: 4px;
@@ -418,7 +419,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 .dark-matter .button:hover {
-    color: #333;
-    background-color: #EBEBEB;
+    color: #222;
+    background-color: green;
 }
 
