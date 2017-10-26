@@ -357,7 +357,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     background: #555;
     padding: 20px 30px 20px 30px;
     font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #D3D3D3;
+    color:#000;
     text-shadow: 1px 1px 1px #444;
     border: none;
     border-radius: 5px;
@@ -372,7 +372,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 .dark-matter h1>span {
     display: block;
-    font-size: 11px;
+    font-size: 18px;
 }
 .dark-matter label {
     display: block;
@@ -385,6 +385,8 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     padding-right: 10px;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 18px;
+    color: #000;
 }
 .dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
     border: none;
@@ -396,7 +398,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     margin-top: 2px;
     outline: 0 none;
     padding: 5px 0px 5px 5px;
-    width: 70%;
+    width: 50%;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -411,7 +413,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-    width: 70%;
+    width: 50%;
     height: 35px;
     color: #525252;
     line-height: 25px;
@@ -419,7 +421,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .dark-matter textarea{
     height:100px;
     padding: 5px 0px 0px 5px;
-    width: 70%;
+    width: 50%;
 }
 .dark-matter .button {
     background: #FFCC02;
