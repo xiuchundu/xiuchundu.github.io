@@ -384,7 +384,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 .dark-matter select {
     background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;
-    background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;
+    /*background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;*/
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance: none;
@@ -402,24 +402,23 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 .dark-matter .button {
     background: #333;
+    color: #fff;
     border: none;
     position:absolute;
     right: 40%;
     /*right: 400px;*/
     padding: 10px 25px 10px 25px;
-    color: #585858;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     text-shadow: 1px 1px 1px #FFE477;
-    font-weight: bold;
+    /*font-weight: bold;*/
     box-shadow: 1px 1px 1px #3D3D3D;
     -webkit-box-shadow:1px 1px 1px #3D3D3D;
     -moz-box-shadow:1px 1px 1px #3D3D3D;
 }
 
 .dark-matter .button:hover {
-    color: #222;
     background-color: green;
 }
 
