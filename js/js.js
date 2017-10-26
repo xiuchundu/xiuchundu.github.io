@@ -13,6 +13,11 @@ function b(){
 $(document).ready(function(e) {
 	b();
   lunbo();
+ 
+ $('#contact').click(function(){
+       alert("信息提交成功！");
+     })
+
 	$('#gotop').click(function(){
 		$(document).scrollTop(0);	
 	})
@@ -142,5 +147,4 @@ function lunbo(){  //图片轮播
     timer=setInterval(nextimg,2000);
   })
   
- 
 }
