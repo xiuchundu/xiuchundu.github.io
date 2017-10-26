@@ -398,7 +398,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     margin-top: 2px;
     outline: 0 none;
     padding: 5px 0px 5px 5px;
-    width: 50%;
+    width: 40%;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -413,7 +413,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-    width: 50%;
+    width: 40%;
     height: 35px;
     color: #525252;
     line-height: 25px;
@@ -421,7 +421,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .dark-matter textarea{
     height:100px;
     padding: 5px 0px 0px 5px;
-    width: 50%;
+    width: 40%;
 }
 .dark-matter .button {
     background: #FFCC02;
