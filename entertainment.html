@@ -50,6 +50,10 @@ html {
 	width: 60px;
 	height: 30px;
 }
+
+#select_model :hover{
+    background: green;
+}
 </style>
 </head>
 
@@ -63,6 +67,8 @@ html {
 </html>
 <script>
 	window.onload = function() {
+       select_model();
+
 		var oBox = document.getElementById('box'); // 主容器
 		//创建一个文档碎片，把所有的新结点附加上，然后把文档碎片的内容一次性添加到document中，只需要一次页面刷新就可
 		var oFrag = document.createDocumentFragment(); // 存放临时文档碎片
@@ -348,5 +354,11 @@ html {
 		} else {
 			return false;
 		}
+	}
+
+	function select_model(){
+		document.getElementById("select_model").onclick=function(){
+			document.location.reload();
+		};
 	}
 </script>
