@@ -381,7 +381,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    background: #DFDFDF;
+    background: #fff;
 }
 .dark-matter select {
     background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;
@@ -393,13 +393,14 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     text-overflow: '';
     width: 40%;
     height: 35px;
-    color: #525252;
+    color: green;
     line-height: 25px;
 }
 .dark-matter textarea{
     height:100px;
     padding: 5px 0px 0px 5px;
     width: 40%;
+    background: #fff;
 }
 .dark-matter .button {
     background: #333;

@@ -13,7 +13,6 @@ function b(){
 $(document).ready(function(e) {
 	b();
   lunbo();
- 
  $('#contact').click(function(){
        alert("信息提交成功！");
      })
