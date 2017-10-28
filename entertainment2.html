@@ -1,17 +1,22 @@
-<html><head><title>use A* to find path...</title></head>
-<body style="margin:0px">
+<html>
+<head>
+<meta charset="utf-8" />
+<title>js自动寻路算法-js A*算法 |手动设置障碍模式</title>
+</head>
+<style>
+body{
+  margin: 0;
+  padding: 0;
+}
+</style>
+<body>
 <script>
-/*
-written by hjjboy
-email:tianmashuangyi@163.com
-qq:156809986
-*/
-var closelist=new Array(),openlist=new Array();
-var gw=10,gh=10,gwh=14;
-var p_start=new Array(2),p_end=new Array(2);
-var s_path,n_path="";
-var num,bg,flag=0;
-var w=30,h=20;
+    var closelist=new Array(),openlist=new Array();
+    var gw=10,gh=10,gwh=14;
+    var p_start=new Array(2),p_end=new Array(2);
+    var s_path,n_path="";
+    var num,bg,flag=0;
+    var w=30,h=20;
 function GetRound(pos){
   var a=new Array();
   a[0]=(pos[0]+1)+","+(pos[1]-1);
