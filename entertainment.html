@@ -46,7 +46,7 @@ html {
 	margin-top:38%;
 }
 #select_model{
-	margin-left: 43%;
+	margin-left: 48%;
 	margin-right: 20px;
 	width: 90px;
 	height: 30px;
@@ -59,7 +59,7 @@ html {
     background: green;
 }
 
-#self_control{
+/*#self_control{
 	margin-top: 5px;
 	margin-buttom: 50px;
 	width: 90px;
@@ -71,7 +71,7 @@ html {
 
 #self_control:hover{
    background: green;
-}
+}*/
 </style>
 </head>
 
@@ -79,7 +79,7 @@ html {
 	<div id="box" class="box"></div>
 	<div id="select">
 		<button id="select_model">重新开始</button>
-		<button id="self_control">自主模式</button>
+		<!-- <button id="self_control">自主模式</button> -->
 	</div>
 
 </body>
@@ -88,7 +88,7 @@ html {
 <script>
 	window.onload = function() {
        select_model();
-       self_control();
+       // self_control();
 		var oBox = document.getElementById('box'); // 主容器
 		//创建一个文档碎片，把所有的新结点附加上，然后把文档碎片的内容一次性添加到document中，只需要一次页面刷新就可
 		var oFrag = document.createDocumentFragment(); // 存放临时文档碎片
@@ -382,9 +382,9 @@ html {
 		};
 	}
 
-	function self_control(){
-		document.getElementById("self_control").onclick=function(){
-			window.location.href="entertainment2.html";
-		};
-	}
+	// function self_control(){
+	// 	document.getElementById("self_control").onclick=function(){
+	// 		window.location.href="entertainment2.html";
+	// 	};
+	// }
 </script>
