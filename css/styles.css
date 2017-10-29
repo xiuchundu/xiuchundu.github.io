@@ -28,7 +28,7 @@ h1{
 }
 
 P{
-   word-wrap:break-word;
+   word-wrap:break-word;  /*?????????嘛意思*/
 }
 
 ul,ol{
@@ -426,6 +426,12 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     height: 80px；
     float: left;
 }
+
+#res_download p{
+   ine-height: 24px; 
+   padding: 0 20px 20px;
+}
+
 
 #res_download img{
     float: left;
