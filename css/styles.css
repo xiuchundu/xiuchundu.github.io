@@ -385,7 +385,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     background: #fff;
 }
 .dark-matter select {
-    background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;  //图片置于右边
+    background: #fff url('../images/liuyan/down-arrow.png') no-repeat right;  //图片置于右边
     /*background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;*/
     appearance:none;
     -webkit-appearance:none;
@@ -395,6 +395,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     width: 40%;
     height: 35px;
     color: green;
+    background: 
     line-height: 25px;
 }
 .dark-matter textarea{
