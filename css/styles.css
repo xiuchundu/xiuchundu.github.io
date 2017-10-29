@@ -10,7 +10,7 @@ body{
     color: #3F3E3C;
 	line-height:1.5;
 	background: #333;
-    cursor:url("../images/cs019_01.cur"),auto;  //自定义鼠标样式，auto不可省略
+    cursor:url("../images/cs019_01.cur"),auto;  //自定义鼠标样式，auto不可省略，因为在上一级 所以需要2个..
 }
 
 img{
@@ -347,6 +347,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     display: block;
     border-bottom: 1px solid #444;
     margin: -10px -30px 30px -30px;
+    color: #a6a6a6;
 }
 .dark-matter h1>span {
     display: block;
@@ -364,7 +365,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: #000;
+    color: #a6a6a6;
 }
 .dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
     border: none;
@@ -384,7 +385,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     background: #fff;
 }
 .dark-matter select {
-    background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;
+    background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;  //图片置于右边
     /*background: #DFDFDF url('../images/liuyan/down-arrow.png') no-repeat right;*/
     appearance:none;
     -webkit-appearance:none;
@@ -404,13 +405,12 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 .dark-matter .button {
     background: #333;
-    color: #fff;
+    color: #a6a6a6;
     border: none;
     position:absolute;
     right: 40%;
-    /*right: 400px;*/
     padding: 10px 25px 10px 25px;
-    border-radius: 4px;
+    border-radius: 5px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     text-shadow: 1px 1px 1px #FFE477;
@@ -421,6 +421,8 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 .dark-matter .button:hover {
-    background-color: green;
+    background-color:#111;
+    color: #fff;
+    border: 1px solid #333;
 }
 
