@@ -427,12 +427,15 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     float: left;
 }
 
-#res_download p{
-   ine-height: 24px; 
+.res_download p{
+   line-height: 24px; 
    padding: 0 20px 20px;
+   font-size: 18px;
+   color: red;
 }
 
 
-#res_download img{
+.res_download img{
     float: left;
 }
+
