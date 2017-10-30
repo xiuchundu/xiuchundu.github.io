@@ -426,6 +426,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     height: 80px；
     /*float: left;*/
     border:1px solid #fff;
+    background: green;
 }
 
 .res_download p{
