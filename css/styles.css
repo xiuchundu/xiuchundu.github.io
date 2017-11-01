@@ -387,7 +387,6 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     width: 40%;
     height: 35px;
     color: green;
-    background: #fff;
     line-height: 25px;
 }
 .dark-matter textarea{
@@ -421,7 +420,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 
 /*********************资源下载样式表************************/
-.res_download{
+.res_download {
     width: 666px;
     height: 80px；
     /*float: left;*/
