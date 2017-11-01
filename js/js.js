@@ -151,7 +151,9 @@ function lunbo(){  //图片轮播
 
 //contact.html 对应的js
 function checkname（）{
-  
+  if($("#name").value==null){
+    alert("姓名不能为空！")
+  }
 }
 
 //contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
