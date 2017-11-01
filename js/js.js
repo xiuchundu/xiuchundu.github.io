@@ -14,7 +14,7 @@ $(document).ready(function(e) {
 	b();
   lunbo();
  $('#contact').click(function(){
-       // alert("信息提交不成功！");
+        checkname();
         checkEmail();
      })
 
@@ -150,7 +150,7 @@ function lunbo(){  //图片轮播
 }
 
 //contact.html 对应的js
-function checkname（）{
+function checkname(){
   if($("#name").value==null){
     alert("姓名不能为空！")
   }
