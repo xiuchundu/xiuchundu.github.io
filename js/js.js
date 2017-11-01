@@ -149,13 +149,14 @@ function lunbo(){  //图片轮播
   
 }
 
-//contact.html 对应的js
+/*********************contact.html 对应的js*******************************/
 function checkname(){
   var nameval=document.getElementById("cname").value;
-  if(nameval==null||nameval==" "){
-    alert("姓名不能为空！")
+   
+  if(nameval==null||nameval==""){
+    alert("姓名不能为空！");
   }
-}
+ }
 
 //contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
 function checkEmail(){
