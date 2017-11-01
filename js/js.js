@@ -156,7 +156,7 @@ function checkEmail(){
 　　var myReg=/^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
  
 　　if(myReg.test(myemail)){
-　　　　alert("邮箱格式不对!");
+　　　　alert("邮箱格式正确!");
 　　}else{
 　　　　alert("邮箱格式不对!");
 }
