@@ -16,6 +16,9 @@ $(document).ready(function(e) {
  $('#contact').click(function(){
         checkname();
         checkEmail();
+        if(checkname()&&checkEmail()){
+          alert("信息提交成功~")
+        }
      })
 
 	$('#gotop').click(function(){
@@ -155,6 +158,9 @@ function checkname(){
    
   if(nameval==null||nameval==""){
     alert("姓名不能为空！");
+  }
+  else{
+    return true;
   }
  }
 
