@@ -151,7 +151,7 @@ function lunbo(){  //图片轮播
 
 //contact.html 对应的js
 function checkname(){
-  var nameval=$("#cname").value;
+  var nameval=document.getElementById("cname").value;
   if(nameval==null||nameval==" "){
     alert("姓名不能为空！")
   }
@@ -159,7 +159,7 @@ function checkname(){
 
 //contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
 function checkEmail(){
-　　var myemail=$("#email").value;
+　　var myemail=document.getElementById("email").value;
 　　var myReg=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
  
 　　if(myReg.test(myemail)){
