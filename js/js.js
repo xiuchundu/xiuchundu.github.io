@@ -14,7 +14,8 @@ $(document).ready(function(e) {
 	b();
   lunbo();
  $('#contact').click(function(){
-       alert("信息提交成功！");
+       // alert("信息提交不成功！");
+        checkEmail();
      })
 
 	$('#gotop').click(function(){
@@ -146,4 +147,17 @@ function lunbo(){  //图片轮播
     timer=setInterval(nextimg,2000);
   })
   
+}
+
+
+//contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
+function checkEmail(){
+　　var myemail=$("#email").value;
+　　var myReg=/^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
+ 
+　　if(myReg.test(myemail)){
+　　　　alert(1);
+　　}else{
+　　　　alert("邮箱格式不对!");
+}
 }
