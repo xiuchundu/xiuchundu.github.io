@@ -149,6 +149,10 @@ function lunbo(){  //图片轮播
   
 }
 
+//contact.html 对应的js
+function checkname（）{
+  
+}
 
 //contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
 function checkEmail(){
@@ -159,5 +163,5 @@ function checkEmail(){
 　　　　alert("邮箱格式正确!");
 　　}else{
 　　　　alert("邮箱格式不对!");
-}
+    }
 }
