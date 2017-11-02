@@ -73,19 +73,19 @@ html {
     background: green;
 }
 
-/*#self_control{
-	margin-top: 5px;/*只需要写一个margin-left，不然会 分成2行*/
-	margin-buttom: 50px;
-	width: 90px;
-	height: 30px;
-	text-align: center;
-	border-radius: 5px;
-	font-weight: bold;
-}
+/*#self_control{*/
+	/*margin-top: 5px;/!*只需要写一个margin-left，不然会 分成2行*!/*/
+	/*margin-buttom: 50px;*/
+	/*width: 90px;*/
+	/*height: 30px;*/
+	/*text-align: center;*/
+	/*border-radius: 5px;*/
+	/*font-weight: bold;*/
+/*}*/
 
-#self_control:hover{
-   background: green;
-}*/
+/*#self_control:hover{*/
+   /*background: green;*/
+/*}*/
 </style>
 </head>
 
@@ -184,7 +184,7 @@ html {
 						target.val = 1;
 						target.className += ' fence';
 					} else if(target.start || target.end)
-						return alert('障碍点熊放置在起止点上');
+						return alert('障碍点不能放置在起止点上');
 				}
 			}
 			//添加完起止点和障碍点后，将所有元素加入地图

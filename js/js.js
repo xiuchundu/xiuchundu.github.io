@@ -166,9 +166,10 @@ function checkname(){
 
 //contact.html验证邮箱  判断用户输入的电子邮箱格式是否正确
 function checkEmail(){
-　　var myemail=document.getElementById("email").value;
+　var myemail=document.getElementById("email").value;
+//    var myemail=$("#email").val();   //jquery写法
 　　var myReg=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
- 
+
 　　if(myReg.test(myemail)){
 　　　　return true;
 　　}else{
