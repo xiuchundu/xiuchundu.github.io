@@ -319,10 +319,10 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 
 /*start self_info CSS*/
-#en{
+.linkmore span{
     display: none;
 }
-#en:hover{
+.linkmore span:hover{
     display: block;
 }
 
