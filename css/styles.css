@@ -318,6 +318,11 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .tuijian li a:hover { color:green;  }
 
 
+/*start self_info CSS*/
+
+
+/*end self_info*/
+
 /*留言*/
 .dark-matter {
     margin: 40px auto;
