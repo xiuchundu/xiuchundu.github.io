@@ -448,7 +448,8 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 
 .res_download img{
-    float: left; //改为float是为了让P标签可以和图片同一行。
+    float: left; /*改为float是为了让P标签可以和图片同一行。*/
     height: 30px;
 }
+
 
