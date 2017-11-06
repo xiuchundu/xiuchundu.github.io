@@ -453,10 +453,8 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 /*index展开收缩功能*/
-
-
-    .panel{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;display:none;}
-    .flip{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;}
+.panel{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;display:none;}
+.flip{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;}
  
 
 
