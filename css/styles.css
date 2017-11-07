@@ -272,7 +272,7 @@ header nav ul li a:hover, #nav_current {
     position: relative;
 }
 
-.blog_show{
+.blog_show ,.blog_show1,.blog_show2{
     font-size:14px;
     color:yellow;
     padding-right:20px;
@@ -296,7 +296,7 @@ header nav ul li a:hover, #nav_current {
 .textinfo { overflow: hidden; }
 .arrow_box img { width: 150px; padding: 4px; float: left; -webkit-transition: All 1s ease; -moz-transition: All 1s ease; -ms-transition: All 1s ease; -o-transition: All 1s ease; border-radius: 4px; margin: 0 20px 20px; }
 .arrow_box img:hover { opacity: 0.6; }
-.arrow_box p { line-height: 24px; padding: 0 20px 20px }
+.arrow_box p { line-height: 24px; padding: 0px 20px }
 .arrow_box:hover { color:green; }
 .arrow_box p:hover { text-shadow: 1px 1px 1px #000; }
 .details { background: rgba(1,1,1,0.3); border-radius: 0 0 6px 6px; padding: 0 10px }
