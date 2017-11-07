@@ -184,12 +184,20 @@ function zhankai(){
   // var Len_blog=document.getElementsByClassName(blog_show);
   // alert(1);
   // for(var i=0;i<Len_blog.length;i++){
-      $(".blog_show").click(function(){
+  // 
+    var aLi = document.querySelectorAll('.blog_show');
+    for (var i = 0; i < aLi.length; i++) {
+        aLi[i].addEventListener('click', function(){
           $(".panel").slideToggle("slow");
           $(".xs1").toggle();
           $(".xs2").toggle();
-          var Len_blog=document.getElementsByClassName('blog_show');
-          alert(Len_blog.length);
-        })
-  // }
+        });
+    }
+
+      // $(".blog_show").click(function(){
+      //     $(".panel").slideToggle("slow");
+      //     $(".xs1").toggle();
+      //     $(".xs2").toggle();
+      //   })
+  
 }
