@@ -181,7 +181,7 @@ function checkEmail(){
 
 //index页面展开收缩功能
 function zhankai(){
-    $(".flip").click(function(){
+    $(".blog_show").click(function(){
         $(".panel").slideToggle("slow");
         $(".xs1").toggle();
         $(".xs2").toggle();
