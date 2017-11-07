@@ -13,6 +13,7 @@ function b(){
 $(document).ready(function(e) {
 	b();
   lunbo();
+  zhankai();
  $('#contact').click(function(){
         checkname();
         checkEmail();
