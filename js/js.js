@@ -188,10 +188,10 @@ function zhankai(){
     var aLi = document.querySelectorAll('.blog_show');
     for (var i = 0; i < aLi.length; i++) {
         aLi[i].addEventListener('click', function(){
-          // $(".panel").slideToggle("slow");
+          var panel=panel+'i';
+          $(".panel").slideToggle("slow");
           // $(".xs1").toggle();
           // $(".xs2").toggle();
-          alert(i);
         });
     }
 
