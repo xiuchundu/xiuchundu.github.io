@@ -185,13 +185,14 @@ function zhankai(){
   // alert(1);
   // for(var i=0;i<Len_blog.length;i++){
   // 
-    var aLi = document.querySelectorAll('.blog_show');
-    for (var i = 0; i < aLi.length; i++) {
-        aLi[i].addEventListener('click', function(){
-          var panel=panel+'i';
-          $(".panel").slideToggle("slow");
-          // $(".xs1").toggle();
-          // $(".xs2").toggle();
+    // var oP = document.querySelectorAll('.blog_show');
+    var oP = document.getElementsByClassName('blog_show');
+    var oPanel = document.getElementsByClassName('panel');
+    for (var i = 0; i < oP.length-2; i++) {
+        oP[i].addEventListener('click', function(){
+         $(".panel").slideToggle("slow");
+          $(".xs1").toggle();
+          $(".xs2").toggle();
         });
     }
 
