@@ -190,15 +190,9 @@ function zhankai(){
     var oPanel = document.getElementsByClassName('panel');
     for (var i = 0; i < oP.length-1; i++) {
         oP[i].addEventListener('click', function(){
-          if(i==0){
-        $(".panel0").slideToggle("slow");
-        $(".xs01").toggle();
-        $(".xs2").toggle();
-          }
-         if (i==2) {}
-        $(".panel1").slideToggle("slow");
-        $(".xs11").toggle();
-        $(".xs12").toggle();
+         $(".panel").slideToggle("slow");
+          $(".xs1").toggle();
+          $(".xs2").toggle();
         });
     }
 
