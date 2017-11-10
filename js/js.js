@@ -189,11 +189,20 @@ function zhankai(){
     var oP = document.getElementsByClassName('blog_show');
     var oPanel = document.getElementsByClassName('panel');
     for (var i = 0; i < oP.length-1; i++) {
+      if (i==0) {
         oP[i].addEventListener('click', function(){
-         $(".panel").slideToggle("slow");
-          $(".xs1").toggle();
-          $(".xs2").toggle();
+         $(".panel0").slideToggle("slow");
+          $(".xs01").toggle();
+          $(".xs02").toggle();
         });
+        }
+       if (i==1) {
+        oP[i].addEventListener('click', function(){
+         $(".panel1").slideToggle("slow");
+          $(".xs11").toggle();
+          $(".xs12").toggle();
+        });
+        }
     }
 
       // $(".blog_show").click(function(){
