@@ -188,7 +188,7 @@ function zhankai(){
     // var oP = document.querySelectorAll('.blog_show');
     var oP = document.getElementsByClassName('blog_show');
     var oPanel = document.getElementsByClassName('panel');
-    for (var i = 0; i < oP.length-1; i++) {
+    for (var i = 0; i < oP.length; i++) {
       if (i==0) {
         oP[i].addEventListener('click', function(){
          $(".panel0").slideToggle("slow");
@@ -201,6 +201,13 @@ function zhankai(){
          $(".panel1").slideToggle("slow");
           $(".xs11").toggle();
           $(".xs12").toggle();
+        });
+        }
+       if (i==2) {
+        oP[i].addEventListener('click', function(){
+         $(".panel2").slideToggle("slow");
+          $(".xs21").toggle();
+          $(".xs22").toggle();
         });
         }
     }
