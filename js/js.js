@@ -187,7 +187,6 @@ function zhankai(){
   // 
     // var oP = document.querySelectorAll('.blog_show');
     var oP = document.getElementsByClassName('blog_show');
-    var oPanel = document.getElementsByClassName('panel');
     for (var i = 0; i < oP.length; i++) {
       if (i==0) {
         oP[i].addEventListener('click', function(){
