@@ -218,3 +218,9 @@ function zhankai(){
       //   })
   
 }
+
+//主页博客翻页
+function fanye(){
+
+
+}
