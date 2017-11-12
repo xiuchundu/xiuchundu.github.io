@@ -456,7 +456,8 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .panel0,.panel1,.panel2{display:none;}
 
 .changepage{
-    float: left;
+    margin-right: 30%;
+    float: right;
 }
 
 #page1{
@@ -466,7 +467,13 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     display: none;
 }
 
- 
+.fanye,.fanye1{
+    width:60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+}
 
 
 

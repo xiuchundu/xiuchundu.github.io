@@ -222,14 +222,22 @@ function zhankai(){
 
 //主页博客翻页
 function fanye(){
+  var opage1=document.getElementById("page1");
+  var opage2=document.getElementById("page2");
     $(".fanye").click(
     function(){
+      if(opage2.style.display=="block"){
+        alert("已经是第二页了");
+      }
       $("#page1").css('display','none');
       $("#page2").css('display','block');
     }
   )
       $(".fanye1").click(
           function(){
+            if(opage1.style.display=="block"){
+              alert("已经是第一页了");
+            }
             $("#page2").css('display','none');
             $("#page1").css('display','block');
           }
