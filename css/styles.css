@@ -455,6 +455,13 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 /*index展开收缩功能*/
 .panel0,.panel1,.panel2{display:none;}
 
+#page1{
+    display: block;
+}
+#page2{
+    display: none;
+}
+
  
 
 
