@@ -224,9 +224,14 @@ function zhankai(){
 function fanye(){
     $(".fanye").click(
     function(){
-    $("#page2").css('display','block');
-    $("#page1").css('display','none');
+      $("#page1").css('display','none');
+      $("#page2").css('display','block');
     }
   )
-
+      $(".fanye1").click(
+          function(){
+            $("#page2").css('display','none');
+            $("#page1").css('display','block');
+          }
+      )
 }
