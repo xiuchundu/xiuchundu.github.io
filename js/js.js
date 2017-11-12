@@ -221,9 +221,9 @@ function zhankai(){
 
 //主页博客翻页
 function fanye(){
-    $(".next").click(
+    $("#fanye").click(
     function(){
-    nextimg();
+    
     }
   )
 
