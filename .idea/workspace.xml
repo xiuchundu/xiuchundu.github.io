@@ -58,10 +58,10 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3923611">
-              <caret line="472" column="16" selection-start-line="472" selection-start-column="16" selection-end-line="472" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.5225694">
+              <caret line="278" column="25" selection-start-line="278" selection-start-column="25" selection-end-line="278" selection-end-column="25" />
               <folding>
-                <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+                <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -456,12 +456,12 @@
       <workItem from="1508747581849" duration="412000" />
       <workItem from="1509548380296" duration="1942000" />
       <workItem from="1509973180938" duration="485000" />
-      <workItem from="1510499935815" duration="2790000" />
+      <workItem from="1510499935815" duration="3291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8892000" />
+    <option name="totallyTimeSpent" value="9393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -537,7 +537,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -571,7 +571,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="23" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -597,7 +597,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -623,7 +623,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -649,7 +649,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="342" column="55" selection-start-line="342" selection-start-column="55" selection-end-line="342" selection-end-column="55" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -687,10 +687,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3923611">
-          <caret line="472" column="16" selection-start-line="472" selection-start-column="16" selection-end-line="472" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.5225694">
+          <caret line="278" column="25" selection-start-line="278" selection-start-column="25" selection-end-line="278" selection-end-column="25" />
           <folding>
-            <marker date="1510502756315" expanded="true" signature="78:184" placeholder="{...}" />
+            <marker date="1510503171263" expanded="true" signature="78:184" placeholder="{...}" />
           </folding>
         </state>
       </provider>
