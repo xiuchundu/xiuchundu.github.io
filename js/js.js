@@ -14,6 +14,7 @@ $(document).ready(function(e) {
 	b();
   lunbo();
   zhankai();
+  fanye();   //翻页
  $('#contact').click(function(){
         checkname();
         checkEmail();
@@ -221,9 +222,10 @@ function zhankai(){
 
 //主页博客翻页
 function fanye(){
-    $("#fanye").click(
+    $(".fanye").click(
     function(){
-    
+    $("#page2").css('display','block');
+    $("#page1").css('display','none');
     }
   )
 
