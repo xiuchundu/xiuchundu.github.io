@@ -210,6 +210,29 @@ function zhankai(){
           $(".xs22").toggle();
         });
         }
+
+       if (i==3) {
+        oP[i].addEventListener('click', function(){
+         $(".panel3").slideToggle("slow");
+          $(".xs31").toggle();
+          $(".xs32").toggle();
+        });
+        }
+       if (i==4) {
+        oP[i].addEventListener('click', function(){
+         $(".panel4").slideToggle("slow");
+          $(".xs41").toggle();
+          $(".xs42").toggle();
+        });
+        }
+       if (i==5) {
+        oP[i].addEventListener('click', function(){
+         $(".panel5").slideToggle("slow");
+          $(".xs51"
+            ).toggle();
+          $(".xs52").toggle();
+        });
+        }
     }
 
       // $(".blog_show").click(function(){
