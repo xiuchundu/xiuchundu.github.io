@@ -228,9 +228,15 @@ function zhankai(){
        if (i==5) {
         oP[i].addEventListener('click', function(){
          $(".panel5").slideToggle("slow");
-          $(".xs51"
-            ).toggle();
+          $(".xs51").toggle();
           $(".xs52").toggle();
+        });
+        }
+         if (i==6) {
+        oP[i].addEventListener('click', function(){
+         $(".panel6").slideToggle("slow");
+          $(".xs61").toggle();
+          $(".xs62").toggle();
         });
         }
     }
