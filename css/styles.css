@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 *{
     margin: 0;
@@ -453,7 +453,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 /*index展开收缩功能*/
-.panel0,.panel1,.panel2{display:none;}
+.panel0,.panel1,.panel2,.panel3,.panel4,.panel5,.panel6{display:none;}
 
 .changepage{
     margin-right: 30%;
@@ -468,20 +468,13 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 .fanye,.fanye1{
+    color: 
     width:60px;
-    color: #fff;
-    margin: 10px;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #333;
     background-color: #222;
 }
 
-.fanye:hover{
-    background-color: #111;
-}
-.fanye1:hover{
-    background-color: #111;
-}
 
 
