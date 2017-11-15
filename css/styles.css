@@ -436,9 +436,12 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
     border: 1px solid #111;
     background-color: #222;
 }
+.each_download h2 a{
+    margin-left: 2%;
+}
 
 .res_download {
-    width: 666px;
+   /* width: 80%;*/
     height: 80px；
     /*float: left;*/
     border:1px solid #fff;
@@ -446,7 +449,7 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 .res_download p{
    line-height: 24px; 
-   padding: 0 20px 20px 80px;
+   padding: 0px 20px 20px 120px;
    font-size: 18px;
    color: #fff;
 }
@@ -454,7 +457,15 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 .res_download img{
     float: left; /*改为float是为了让P标签可以和图片同一行。*/
+    margin-left: 3%;
     height: 60px;
+}
+
+.each_click{
+    /*float:right;*/
+    padding-left: 75%;
+    padding-right: 5%;
+    font-size: 18px;
 }
 
 /*index展开收缩功能*/
