@@ -261,7 +261,7 @@ header nav ul li a:hover, #nav_current {
 }
 .bloglist>li {
     border-right: #111 2px solid;
-    padding: 20px 0;
+    padding: 10px 0;    //控制bloglist块间隔
 }
 .arrow_box {
     background: #222;
