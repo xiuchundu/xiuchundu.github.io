@@ -239,6 +239,13 @@ function zhankai(){
           $(".xs62").toggle();
         });
         }
+         if (i==7) {
+        oP[i].addEventListener('click', function(){
+         $(".panel7").slideToggle("slow");
+          $(".xs71").toggle();
+          $(".xs72").toggle();
+        });
+        }
     }
 
       // $(".blog_show").click(function(){
