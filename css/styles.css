@@ -431,6 +431,12 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 
 
 /*********************资源下载样式表************************/
+.each_download{
+    margin: 2% 20% ;
+    border: 1px solid #111;
+    background-color: #222;
+}
+
 .res_download {
     width: 666px;
     height: 80px；
@@ -439,17 +445,16 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 }
 
 .res_download p{
-   padding-left: 40px;
    line-height: 24px; 
-   padding: 0 20px 20px;
+   padding: 0 20px 20px 80px;
    font-size: 18px;
-   color: red;
+   color: #fff;
 }
 
 
 .res_download img{
     float: left; /*改为float是为了让P标签可以和图片同一行。*/
-    height: 30px;
+    height: 60px;
 }
 
 /*index展开收缩功能*/
