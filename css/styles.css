@@ -504,3 +504,12 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .blog_detail:hover{
     color: #111;
 }
+
+
+/*study.html样式*/
+.each_study{
+    margin: 2% 20% ;
+    border: 1px solid #111;
+    background-color: #222;
+    border-radius: 5px;
+}
