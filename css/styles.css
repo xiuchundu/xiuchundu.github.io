@@ -517,7 +517,14 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .each_study p{
    line-height: 24px; 
    padding: 0px 20px 20px 20px;
-   font-size: 14px;
-   /*color: #fff;*/
+   font-size: 12px;
+   color: #999;
+   letter-spacing: 1px;
 }
 
+.each_study h3{
+   padding-left: 20px;
+   font-weight: bold;
+   font-size: 14px;
+   color: #666;
+}
