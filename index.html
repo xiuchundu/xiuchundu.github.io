@@ -26,12 +26,23 @@
                 <li><a id="study" href="study.html" target="_self">学习</a></li>
                 <li><a href="entertainment.html" target="_self" >娱乐</a></li>
                 <li><a href="self_info.html" target="_self" >个人简历</a></li>
-                <li><a href="download.html" target="_self" >资源下载</a></li>
-                <li><a href="contact.html" target="_self">留言</a></li>
+               <li><a href="download.html" target="_self" >资源下载</a></li>
+    <!--       <li><a href="download.html" target="_parent" title="资源下载">资源下载</a></li>  -->
+             <!-- 可新增页面，用形如<a href="Web.rar" >download</a>做成资源下载页面 ，若使用_blank则会另开一个页面，若不写target="_blank"则只会在当前页面下切换html，且可以点击浏览器返回上一级回到之前的页面-->
+            <li><a href="contact.html" target="_self">留言</a></li>
         </ul>
     </nav>
 </header>
-<div id="content">
+ <!-- <script type="text/javascript">
+    $(function() {   //打算做滑动效果
+      $("#header").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script> -->
+<!--header end-->
+< id="content">
     <div id="box" class="box">
     <div class="list">
     <ul>
@@ -278,7 +289,7 @@
            <li><a href="http://echarts.baidu.com/index.html" target="_blank">6.Echarts学习教程</a></li>
            <li><a href="http://www.cnblogs.com/bianyuanzhe/p/6369478.html" target="_blank">7.大前端完整学习路线（详解）</a></li>
            <li><a href="http://blog.csdn.net/jing_valora/article/details/50987873" target="_blank">8.前端开发入门之道</a></li>
-             <li><a href=" http://geek.csdn.net/news/detail/241917" target="_blank">9.爱上朴实的CSS细节</a></li>
+           <li><a href=" http://geek.csdn.net/news/detail/241917" target="_blank">9.爱上朴实的CSS细节</a></li>
           
         </ol>
          <br><hr />
@@ -296,8 +307,8 @@
     </aside>
   </div>
 </div>
-  <!-- <div id="footer">
+  <div id="footer">
     <p>copyright 2017 designed by duchunxiu</p>
-  </div> -->
+  </div>
 </body>
 </html>

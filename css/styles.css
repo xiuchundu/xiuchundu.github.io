@@ -528,3 +528,15 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
    font-size: 14px;
    color: #666;
 }
+
+#footer{
+    width: 76%;
+    height: 60px;
+    margin-left: 12%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    clear: both;
+    background-color: #222;
+
+    text-align: center;
+}
