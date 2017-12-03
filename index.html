@@ -1,313 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>杜春修的博客</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/animation.css">
-    <link rel="stylesheet" type="text/css" href="css/lrtk.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.easing.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script> -->
-    <script type="text/javascript" src="js/js.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="js/silder.js"></script>
-    <!-- 返回顶部调用 end-->
-    <!--[if lt IE 9]-->
-    <script src="js/modernizr.js"></script>
-    <!--[endif]-->
-    </head>
-    <body>
-    <header>
-        <!-- <div id="logo"><a onmouseover="alert('你别跟我瞎闹');return false;"></a></div>   -->
-        <div id="logo"><a onmouseover="this.background='s1.jpg'"  onmouseout="this.background='logo.png'"></a></div><!--添加logo-->
-        <nav id="header">     
-            <ul>              
-                <li><a href="index.html">博客首页</a></li>
-                <li><a id="study" href="study.html" target="_self">学习</a></li>
-                <li><a href="entertainment.html" target="_self" >娱乐</a></li>
-                <li><a href="self_info.html" target="_self" >个人简历</a></li>
-               <li><a href="download.html" target="_self" >资源下载</a></li>
-    <!--       <li><a href="download.html" target="_parent" title="资源下载">资源下载</a></li>  -->
-             <!-- 可新增页面，用形如<a href="Web.rar" >download</a>做成资源下载页面 ，若使用_blank则会另开一个页面，若不写target="_blank"则只会在当前页面下切换html，且可以点击浏览器返回上一级回到之前的页面-->
-            <li><a href="contact.html" target="_self">留言</a></li>
+---
+layout: default
+---
+
+<div class="page clearfix" index>
+    <div class="left">
+        <h1>Welcome to HyG's Blog!</h1>
+        <small>这里记录着我的前端学习之路</small>
+        <hr>
+        <ul>
+            {% for post in paginator.posts %}
+              <li>
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                    </div>
+                    <div class="label-card">
+                        {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
+                        {% endif %}
+                    </div>
+                    <div class="label-card">
+                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                    </div>
+
+                    <div class="label-card">
+                    {% include category.html %}
+                    </div>
+
+                    <div class="label-card">
+                    {% include tag.html %}
+                    </div>
+                </div>
+                <div class="excerpt">
+                    {{post.excerpt}}
+                </div>
+                <div class="read-all">
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            {% endfor %}
         </ul>
-    </nav>
-</header>
- <!-- <script type="text/javascript">
-    $(function() {   //打算做滑动效果
-      $("#header").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script> -->
-<!--header end-->
-< id="content">
-    <div id="box" class="box">
-    <div class="list">
-    <ul>
-      <li class="p7"><a href="#"><img src="images/lunbo/1.png" alt="" /></a></li>
-      <li class="p6"><a href="#"><img src="images/lunbo/2.png" alt="" /></a></li>
-      <li class="p5"><a href="#"><img src="images/lunbo/3.png" alt="" /></a></li>
-      <li class="p4"><a href="#"><img src="images/lunbo/44.png" alt="" /></a></li>
-      <li class="p3"><a href="#"><img src="images/lunbo/55.png" alt="" /></a></li>
-      <li class="p2"><a href="#"><img src="images/lunbo/66.png" alt="" /></a></li>
-      <li class="p1"><a href="#"><img src="images/lunbo/77.png" alt="" /></a></li>
-    </ul>
-  </div>
-  
-  <a href="javascript:;" class="prev btn"><</a>
-  <a href="javascript:;" class="next btn">></a>
-
-  <div class="buttons">
-    <a href="javascript:;"><span class="blue"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-    <a href="javascript:;"><span class="red"></span></a>
-  </div>
 
 
-</div>
-    <!--info end-->
-    <div class="blank"></div>   <!--作为间隔-->
-    <div class="blogs">
-      <div id="page1">
-        <ul class="bloglist">
-         <li>
-          <div class="arrow_box">
-            <!--<div class="ti"></div>-->
-            <!--三角形-->
-            <!--<div class="ci"></div>-->
-            <!--圆形-->
-            <h2 class="title"><a>浅谈A*算法</a></h2>
-            <ul class="textinfo">
-                <p> 最近打算用JS完成一个寻路的小游戏，想到了A*算法，所以就简单地写下思路啦！
-                    A*算法主要用到的是一个公式：F=G+H；G，是指起始点到当前点的距离。H，是指当
-                    前点到目的点的距离。F，是两者之和。</p>
-                <ul class="panel0">
-                <p>晨星博客 - 专注网站SEO优化及wordpress主题开发</p>
-                <p>晨星博客（ChenXingWeb.Com）专注WordPress程序周边及开发和南阳地区seo诊断，旨在为大家提供优质主题资源和服务，解决广大站长的建站需求。</p>
-                </ul>
-                <p class="blog_show"><span class="xs01">阅读全文>></span><span class="xs02" style="display:none;">收起</span></p>
-            </ul>
 
-            <ul class="details">
-                <li class="likes"><a href="#">10</a></li>
-                <li class="comments"><a href="#">34</a></li>
-                <li class="icon-time"><a href="#">2017-09-07</a></li>
-            </ul>
+        <!-- Pagination links -->
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
+          {% else %}
+            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
+          {% endif %}
+          <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+          {% else %}
+            <span class="next disable"><i class="fa fa-angle-right"></i></span>
+            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
+          {% endif %}
         </div>
-        <!--  arrow_box end -->
-    </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">fastText原理及应用</a></h2>
-                <ul class="textinfo">
-                    <p>fastText是一种Facebook AI Research在16年开源的一个文本分类器。
-                      其特点就是fast。相对于其它文本分类模型，如SVM，Logistic Regression和neural network等模型，fastText在保持分类效果的同时，大大缩短了训练时间，这些都可以在作者的paper中看到。</p>
-                    <ul class="panel1">
-                    <p>晨星博客 - 专注网站SEO优化及wordpress主题开发</p>
-                    <p>晨星博客（ChenXingWeb.Com）专注WordPress程序周边及开发和南阳地区seo诊断，旨在为大家提供优质主题资源和服务，解决广大站长的建站需求。</p>
-                    </ul>
-                     <p class="blog_show"><span class="xs11">阅读全文>></span><span class="xs12" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">102</a></li>
-                    <li class="comments"><a href="#">58</a></li>
-                    <li class="icon-time"><a href="#">2017-09-25</a></li>
-                </ul>
-            </div>
-            <!--arrow_box end-->
-        </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">nodejs最新书籍推荐</a></h2>
-                <ul class="textinfo">
-                    <p>(1)node.js开发指南</p>
-                    <p>(2)Node.js Products and Expertise</p>
-                    <ul class="panel2">
-                    <p>(3) Express.js Guide: The Comprehensive Book on Express.js</p>
-                    <p>(4) Building Hypermedia APIs with HTML5 and Node</p>
-                    <p>(5)Building Node Applications with MongoDB and Backbone</p>
-                    </ul>
-                    <p class="blog_show"><span class="xs21">阅读全文>></span><span class="xs22" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">10</a></li>
-                    <li class="comments"><a href="#">34</a></li>
-                    <li class="icon-time"><a href="#">2017-09-07</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">谁害死了“旧”乐视？</a></h2>
-                <ul class="textinfo">
-                    <p>(1)node.js开发指南</p>
-                    <p>(2)Node.js Products and </p>
-                    <ul class="panel3">
-                        <p>(3) Express.js Guide: The Comprehensive Book on Express.js</p>
-                        <p>(4) Building Hypermedia APIs with HTML5 and Node</p>
-                        <p>(5)Building Node Applications with MongoDB and Backbone</p>
-                    </ul>
-                    <p class="blog_show"><span class="xs21">阅读全文>></span><span class="xs22" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">10</a></li>
-                    <li class="comments"><a href="#">34</a></li>
-                    <li class="icon-time"><a href="#">2017-09-07</a></li>
-                </ul>
-            </div>
-            </li>
-            <!--  arrow_box end -->
-            <div class="changepage">
-                <button class="fanye1">上一页</button>
-                <button class="fanye">下一页</button>
-            </div>
-      </ul>
-
     </div>
-     <!--博客第二页-->
-      <div id="page2">
-        <ul class="bloglist">
-         <li>
-          <div class="arrow_box">
-            <!--<div class="ti"></div>-->
-            <!--三角形-->
-            <!--<div class="ci"></div>-->
-            <!--圆形-->
-            <h2 class="title"><a>Web前端开发规范文档你需要知道的事</a></h2>
-            <ul class="textinfo">
-                 <pre class="blog_detail">一、文件规范</pre>
-               <p> 1. html, css, js, images文件均归档至<系统开发规范>约定的目录中;<br>
-                2. html文件命名: 英文命名, 后缀.htm. 同时将对应界面稿放于同目录中, 若界面稿命名为中文, 请重命名与html文件同名,以方便后端添加功能时查找对应页面;<br>
-                </p>
-                <ul class="panel4">
-                <p>3. css文件命名: 英文命名, 后缀.css. 共用base.css, 首页index.css, 其他页面依实际模块需求命名.;<br>
-
-                4. Js文件命名: 英文命名, 后缀.js. 共用common.js, 其他依实际模块需求命名.<br></p>
-                <a class="blog_detail" href="http://blog.csdn.net/sunhuaqiang1/article/details/51670462" target="_blank">html书写规范</a>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    {% for post in site.posts offset: 0 limit: 10  %}
+                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
-                <p class="blog_show"><span class="xs41">阅读全文>></span><span class="xs42" style="display:none;">收起</span></p>
-            </ul>
+            </div>
 
-            <ul class="details">
-                <li class="likes"><a href="#">10</a></li>
-                <li class="comments"><a href="#">34</a></li>
-                <li class="icon-time"><a href="#">2017-09-07</a></li>
-            </ul>
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    {% for category in site.categories %}
+                    <li>
+                        <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
+                            <span class="name">
+                                {{ category | first }}
+                            </span>
+                            <span class="badge">{{ category | last | size }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    {% assign first = site.tags.first %}
+                    {% assign max = first[1].size %}
+                    {% assign min = max %}
+                    {% for tag in site.tags offset:1 %}
+                      {% if tag[1].size > max %}
+                        {% assign max = tag[1].size %}
+                      {% elsif tag[1].size < min %}
+                        {% assign min = tag[1].size %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% if max == min %}
+                        {% assign diff = 1 %}
+                    {% else %}
+                        {% assign diff = max | minus: min %}
+                    {% endif %}
+
+                    {% for tag in site.tags %}
+                      {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
+                      {% assign base = temp | divided_by: 4 %}
+                      {% assign remain = temp | modulo: 4 %}
+                      {% if remain == 0 %}
+                        {% assign size = base | plus: 9 %}
+                      {% elsif remain == 1 or remain == 2 %}
+                        {% assign size = base | plus: 9 | append: '.5' %}
+                      {% else %}
+                        {% assign size = base | plus: 10 %}
+                      {% endif %}
+                      {% if remain == 0 or remain == 1 %}
+                        {% assign color = 9 | minus: base %}
+                      {% else %}
+                        {% assign color = 8 | minus: base %}
+                      {% endif %}
+                      <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
         </div>
-        <!--  arrow_box end -->
-    </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">小蓝酷骑接连倒闭，共享单车15亿押金有去无回</a></h2>
-                <ul class="textinfo">
-                    <p>似乎，某共享单车创始人的预言，在2017年的这个寒冬演变成现实。只不过，这场“淘汰赛”似乎来得有点太快，太猛了，而且一轮接着一轮，谁都不敢出手相救，谁也没法挽救；而我们正如看客一般，目睹着整个死亡事件的发生，从诞生，到生病，到无药可医，再到濒临死亡。</p>
-                    <ul class="panel5">
-                    <p>所谓“共享经济”泡沫破碎的背后，究竟是谁出了问题？<br>越来越多的迹象表明，酷骑单车将是下一个“小蓝”。最早在今年8月中旬，全国各地有不少酷骑单车用户反映，酷骑单车无法再承诺的7天内进行押金退款。有的用户甚至申请了一个月，押金仍然没有退回，客服电话也打不通。而这个现象距离“黄金单车”的强势上路仅仅不过五个月。到了9月份，这些问题不但没有解决，还越演越烈，当时，就有媒体曝光，杭州、合肥、长沙等多地的单车分部已人去楼空。进入10月、11月，有关酷骑单车的负面报道不断，就在前两日，酷骑单车还发布公告称，暂停北京通州万达广场办公室办理退押金业务，用户可以“持身份证或驾照、护照等有效证件到四川省成都市高新区吉泰路588号海洋中心1栋708室办理”。</p>
-                    </ul>
-                     <p class="blog_show"><span class="xs51">阅读全文>></span><span class="xs52" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">102</a></li>
-                    <li class="comments"><a href="#">58</a></li>
-                    <li class="icon-time"><a href="#">2017-09-25</a></li>
-                </ul>
-            </div>
-            <!--arrow_box end-->
-        </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">盘点2017全球八大数据泄露案件，刷新你的认知</a></h2>
-                <ul class="textinfo">
-                    <p>近日，有关公民个人隐私数据泄露的新闻此起彼伏，前有社交平台Facebook影响美国大选，后有趣店数据遭遇内鬼外泄，而Uber也曝光了早在一年前发生的数据泄露事件。通过盘点近期全球范围内所发生的数据泄露事件，我们选出了七个经典案例：</p>
-                    <ul class="panel6">
-                      <p>1、五角大楼AWS S3配置错误，意外暴露18亿公民信息</p>
-                      <p>2、Uber隐瞒大规模数据泄露，还给黑客10万“封口费”</p>
-                      <p>3、趣店数百万学生数据泄露，称或遭内部员工报复</p>
-                      <p>4、雅虎30亿帐号或已全部泄露，政监机构参与调查</p>
-                      <p>5、美国信用机构Equifax遭入侵，近半用户信息泄露</p>
-                      <p>6、南非史上最大规模数据泄露，3000多万客户信息被公开</p>
-                      <p>7、韩国加密货币交易所被黑客攻击，3万客户数据泄露</p>
-                    </ul>
-                    <p class="blog_show"><span class="xs61">阅读全文>></span><span class="xs62" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">10</a></li>
-                    <li class="comments"><a href="#">34</a></li>
-                    <li class="icon-time"><a href="#">2017-09-07</a></li>
-                </ul>
-            </div>
-            <!--  arrow_box end -->
-        </li>
-        <li>
-            <div class="arrow_box">
-                <h2 class="title"><a href="bloglist1.html" target="_self">谁害死了“旧”乐视？</a></h2>
-                <ul class="textinfo">
-                    <p>(1)node.js开发指南</p>
-                    <p>(2)Node.js</p>
-                    <ul class="panel7">
-                        <p>(3) Express.js Guide: The Comprehensive Book on Express.js</p>
-                        <p>(4) Building Hypermedia APIs with HTML5 and Node</p>
-                        <p>(5)Builin N Ai</p>
-                    </ul>
-                    <p class="blog_show"><span class="xs71">阅读全文>></span><span class="xs72" style="display:none;">收起</span></p>
-                </ul>
-                <ul class="details">
-                    <li class="likes"><a href="#">10</a></li>
-                    <li class="comments"><a href="#">34</a></li>
-                    <li class="icon-time"><a href="#">2017-09-07</a></li>
-                </ul>
-            </div>
-        </li>
-        <div class="changepage">
-            <button class="fanye1">上一页</button>
-            <button class="fanye">下一页</button>
-        </div>
-      </ul>
-
     </div>
-
-
-    <!--bloglist end-->
-    <aside>
-      <div class="tuijian">
-        <h2>推荐文章</h2>
-        <hr />
-        <h3>前端</h3>
-        <ol>
-          <li><a href="http://blog.csdn.net/shine_sunny1/article/details/78310343" target="_blank">1.Javascript各种设计模式</a></li>
-          <li><a href="http://blog.csdn.net/happinesssourcel/article/details/78309927" target="_blank">2.阿里校招内推一面问题</a></li>
-           <li><a href="http://blog.csdn.net/csdnsr/article/details/78307648"  target="_blank">3.JavaScript忍者秘籍笔记02之闭包</a></li>
-           <li><a href="http://blog.csdn.net/zdp072/article/details/21255657" target="_blank">4.Web前端牛人博客整理</a></li>
-           <li><a href="http://geek.csdn.net/news/detail/240140" target="_blank">5.听说2017你想写前端？</a></li>
-           <li><a href="http://echarts.baidu.com/index.html" target="_blank">6.Echarts学习教程</a></li>
-           <li><a href="http://www.cnblogs.com/bianyuanzhe/p/6369478.html" target="_blank">7.大前端完整学习路线（详解）</a></li>
-           <li><a href="http://blog.csdn.net/jing_valora/article/details/50987873" target="_blank">8.前端开发入门之道</a></li>
-           <li><a href=" http://geek.csdn.net/news/detail/241917" target="_blank">9.爱上朴实的CSS细节</a></li>
-          
-        </ol>
-         <br><hr />
-         <h3>新技术</h3>
-        <ol>
-           <li><a href="http://cs.stanford.edu/people/karpathy/convnetjs/" target="_blank">1.ConvNetJS: Deep Learning in your browser</a></li>
-           <li><a href="http://echarts.baidu.com/index.html" target="_blank">2.Echarts学习教程</a></li>
-           <li><a href="http://news.163.com/17/1019/01/D12RR40K000187VE.html" target="_blank">3.阿尔法狗再进化:自学3天100:0碾压旧狗</li>
-           <li><a href="http://www.csdn.net/article/2014-07-11/2820615-14-world-best-programmers" target="_blank">4.全球最杰出的14位程序员</a></li>
-           <li><a href="http://blog.csdn.net/wemedia/details.html?id=45470" target="_blank">5. 医疗AI：新瓶装旧酒VS新瓶装新酒？</a></li>
-           <li><a href="http://blog.csdn.net/wemedia/details.html?id=45461" target="_blank">6.周志华最新论文：首个基于决策树集成的自动编码器，表现优于DNN</a></li>
-        </ol>
-      
-      </div>
-    </aside>
-  </div>
 </div>
-  <div id="footer">
-    <p>copyright 2017 designed by duchunxiu</p>
-  </div>
-</body>
-</html>
+<!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
