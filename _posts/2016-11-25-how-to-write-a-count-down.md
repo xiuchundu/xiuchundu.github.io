@@ -2,7 +2,7 @@
 layout: post
 title:  "前端如何写一个精确的倒计时"
 categories: JavaScript
-tags:  countdown JavaScript
+tags:  设计模式 JavaScript
 author: DCX
 ---
 
