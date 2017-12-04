@@ -57,7 +57,6 @@ excerpt_separator: "\n\n\n\n"
 
 # paginate
 # gems: [jekyll-paginate]
-plugins:
-  - jekyll-feed
+plugins: -jekyll-feed
 
 paginate: 6
