@@ -16,11 +16,11 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: gaohaoyang126
 facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
+github_username:  xiuchundu
+email: 1541131845@qq.com
+weibo_username: 18202787879@
+zhihu_username: 中南小和尚
+linkedIn_username: 
 dribbble_username:
 
 description_footer: 本站记录我前端之旅的沿途风景！
@@ -29,7 +29,7 @@ description_footer: 本站记录我前端之旅的沿途风景！
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
-disqus_shortname: gaohaoyang
+disqus_shortname: duchunxiu
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
