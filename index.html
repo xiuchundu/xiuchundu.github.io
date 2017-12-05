@@ -144,6 +144,25 @@ layout: default
                 </div>
             </div>
 
+
+
+            <div id="container"></div>
+            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+            <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+            <script>
+            var gitment = new Gitment({
+              // id: '页面 ID', // 可选。默认为 location.href
+              owner: 'xiuchundu',
+              repo: 'Blogs.git',
+              oauth: {
+                client_id: '3b88888a133736c43c43',
+                client_secret: 'dd5b46f83cde60f8cc51c5ba9663585d8063ccc5',
+              },
+            })
+            gitment.render('container')
+            </script>
+
+
             <!-- <div class="side">
                 <div>
                     <i class="fa fa-external-link"></i>
