@@ -2,7 +2,7 @@
 layout: post
 title:  "D3.js和highcharts,echarts性能对比 "
 categories: JavaScript
-tags:  代理模式 JavaScript
+tags:   d3.js 数据可视化性能 JavaScript
 author: DCX
 ---
 
