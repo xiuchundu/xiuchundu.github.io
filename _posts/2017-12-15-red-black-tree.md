@@ -100,7 +100,7 @@ author: DCX
 
 5.从任一节点到其每个叶子的所有路径都包含相同数目的黑色节点。
 
-**下图中这棵树，就是一颗典型的红黑树： **
+下图中这棵树，就是一颗典型的红黑树： 
 
 ![](https://user-gold-cdn.xitu.io/2017/12/6/1602b6016e143cf3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
