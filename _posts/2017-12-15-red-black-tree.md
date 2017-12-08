@@ -22,20 +22,11 @@ author: DCX
 
 
 ## 漫画展示
-![](https://user-gold-cdn.xitu.io/2017/12/6/1602b60078667ae9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1）
 
-！[]()
-![]
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
-！[]()
+![](https://user-gold-cdn.xitu.io/2017/12/6/1602b60078667ae9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+
+
+
 
 
