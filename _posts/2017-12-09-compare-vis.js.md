@@ -14,7 +14,7 @@ author: DCX
 　　前端做数据可视化开，经常会用到D3.js、highcharts、echarts这些可视化插件，如何选择一款合适的插件，常常困扰着开发人员。我也遇到过这个问题，下面我就就这三者在性能上的区别做一个简单的介绍： 
 
  
-
+![](https://i.imgur.com/5eNFCt4.jpg)
 
 
 
