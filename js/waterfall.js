@@ -37,7 +37,7 @@
     }, {
       demo_link: 'https://xiuchundu.github.io/Poker_switch_animation/',
       img_link: 'https://i.imgur.com/10UrLJ8.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ToDo-WebApp',
+      code_link: 'https://github.com/xiuchundu/Poker_switch_animation',
       title: '扑克洗牌动画特效',
       core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
       description: '实现了扑克洗牌动画特效，扑克洗牌动画特效'
