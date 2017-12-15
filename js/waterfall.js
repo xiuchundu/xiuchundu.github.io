@@ -43,7 +43,7 @@
       description: '实现了扑克洗牌动画特效，扑克洗牌动画特效'
     }, {
       demo_link: 'https://xiuchundu.github.io/AI_for_2048/',
-      img_link: '![](https://i.imgur.com/2nrizGN.jpg)',
+      img_link: 'https://i.imgur.com/TaTAVCJ.jpg',
       code_link: 'https://github.com/xiuchundu/AI_for_2048',
       title: 'AI_for_2048',
       core_tech: 'JavaScript LocalStorage',
