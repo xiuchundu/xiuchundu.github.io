@@ -25,6 +25,7 @@ h6 {
 }
 html {
     height: 100%;
+    cursor:url("../images/cs019_01.cur"),auto; 
 }
 body {
     font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
@@ -34,7 +35,7 @@ body {
     position: relative;
     min-height: 100%;
     padding-bottom: 190px;
-    cursor:url("../images/cs019_01.cur"),auto; 
+
 }
 a {
     text-decoration: none;
