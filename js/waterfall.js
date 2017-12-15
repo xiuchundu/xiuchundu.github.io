@@ -42,12 +42,12 @@
       core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
       description: '实现了扑克洗牌动画特效，扑克洗牌动画特效'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/baidu-ife-practice/task0003/',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-todo.png',
-      code_link: 'https://github.com/Gaohaoyang/baidu-ife-practice/tree/master/task0003',
-      title: '百度前端学院 task0003 ToDo 应用',
+      demo_link: 'https://xiuchundu.github.io/AI_for_2048/',
+      img_link: '![](https://i.imgur.com/2nrizGN.jpg)',
+      code_link: 'https://github.com/xiuchundu/AI_for_2048',
+      title: 'AI_for_2048',
       core_tech: 'JavaScript LocalStorage',
-      description: '任务三，ToDo 单页应用，主要使用了 LocalStorage 存储数据，使用 JSON 模拟了 3 张数据表。'
+      description: '使用AI算法实现自动完成2048游戏的效果'
     }, {
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
