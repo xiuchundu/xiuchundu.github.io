@@ -47,7 +47,7 @@
       code_link: 'https://github.com/xiuchundu/AI_for_2048',
       title: 'AI_for_2048',
       core_tech: 'JavaScript LocalStorage',
-      description: '使用AI算法实现自动完成2048游戏的效果'
+      description: '使用AI算法实现自动完成2048游戏的效果，点击按钮自动执行，也可以获取提示，自己操作方向键，完成游戏。'
     }, {
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
