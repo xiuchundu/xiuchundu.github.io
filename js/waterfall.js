@@ -36,14 +36,14 @@
       description: '使用 animate 方法，做到兼容 IE8。曾在联想服务官网上线3个月。'
     }, {
       demo_link: 'https://xiuchundu.github.io/Poker_switch_animation/',
-      img_link: 'https://i.imgur.com/npKCzut.jpg',
+      img_link: 'https://i.imgur.com/y4pxMdx.jpg',
       code_link: 'https://github.com/xiuchundu/Poker_switch_animation',
       title: '扑克洗牌动画特效',
       core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
       description: '实现了扑克洗牌动画特效，扑克洗牌动画特效'
     }, {
       demo_link: 'https://xiuchundu.github.io/AI_for_2048/',
-      img_link: 'https://i.imgur.com/djRXsES.jpg',
+      img_link: 'https://i.imgur.com/RIZMdgZ.jpg',
       code_link: 'https://github.com/xiuchundu/AI_for_2048',
       title: 'AI_for_2048',
       core_tech: 'JavaScript LocalStorage',
