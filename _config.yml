@@ -28,7 +28,7 @@ description_footer: 本站记录我前端之旅的沿途风景！
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，要使用自己的 short_name
-duoshuo_shortname: #hygblog
+# duoshuo_shortname: #hygblog
 # disqus_shortname: xiuchundu    国内打不开，需要翻墙
 # uyan: 2151218
 
