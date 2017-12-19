@@ -47,7 +47,7 @@
 
 
 {% if site.comment_gitment_repo %}
-<div id="gitmentContainer"></div>
+<div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
@@ -60,6 +60,6 @@
     client_secret: '8af0d37c1243462d220c0aa97bf6d1ae0cc52fc6',
     },
     });
-    gitment.render('gitmentContainer')
+    gitment.render('container')
 </script>
 {% endif %}
