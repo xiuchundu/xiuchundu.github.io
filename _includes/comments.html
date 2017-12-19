@@ -63,3 +63,19 @@
     gitment.render('container')
 </script> -->
 <!-- {% endif %} -->
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+    // id: '页面 ID', // 可选。默认为 location.href
+    owner: 'xiuchundu',
+    repo: 'https://github.com/xiuchundu/xiuchundu.github.io.git',
+    oauth: {
+    client_id: 'df9c39a49a9b36ed65a9',
+    client_secret: '8af0d37c1243462d220c0aa97bf6d1ae0cc52fc6',
+    },
+    });
+    gitment.render('container')
+</script>
