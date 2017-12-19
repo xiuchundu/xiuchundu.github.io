@@ -32,6 +32,12 @@ duoshuo_shortname: #hygblog
 disqus_shortname: xiuchundu
 # uyan: 2151218
 
+
+#gitment
+comment_gitment_repo: xiuchundu.github.io
+comment_gitment_clientId: df9c39a49a9b36ed65a9
+comment_gitment_clientSecret: 8af0d37c1243462d220c0aa97bf6d1ae0cc52fc6
+
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";

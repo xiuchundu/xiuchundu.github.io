@@ -64,17 +64,20 @@
 </script> -->
 <!-- {% endif %} -->
 
+
+{% if site.comment_gitment_repo %}
 <div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
     // id: '页面 ID', // 可选。默认为 location.href
-    owner: 'xiuchundu',
-    repo: 'xiuchundu.github.io',
+    owner: '{{site.github_username}}',
+    // repo: 'https://github.com/xiuchundu/xiuchundu.github.io.git',这个会出错，要用下面的
+    repo: '{{site.comment_gitment_repo}}',
     oauth: {
-    client_id: 'df9c39a49a9b36ed65a9',
-    client_secret: '8af0d37c1243462d220c0aa97bf6d1ae0cc52fc6',
+    client_id: '{{site.comment_gitment_clientId}}',
+    client_secret: '{{site.comment_gitment_clientSecret}}',
     },
     });
     gitment.render('container')
