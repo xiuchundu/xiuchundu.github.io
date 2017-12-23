@@ -129,7 +129,7 @@ type: page
 
 ### React
 
-* [深入理解 React -Thinking in React 中文版](http://reactjs.cn/react/docs/thinking-in-react.html)
+* [React 中文版](http://wiki.jikexueyuan.com/project/react/)
 * [Thinking in React](http://facebook.github.io/react/docs/thinking-in-react.html)
 
 ### AngularJS
