@@ -11,6 +11,14 @@ type: page
 
 ## 工具
 
+* [Css Sprite](http://alloyteam.github.io/gopng/)
+	
+	HTML 5开发的在线雪碧图片合成工具
+
+* [JS/HTML formatting](http://tool.chinaz.com/tools/jsformat.aspx)
+
+	JS/HTML格式化工具
+
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
 
     生成 box-shadow 的工具。
