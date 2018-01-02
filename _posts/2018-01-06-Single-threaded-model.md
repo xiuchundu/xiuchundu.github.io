@@ -39,6 +39,7 @@ JavaScript运行时，除了一个运行线程，引擎还提供一个消息队�
 
 一旦当前执行栈空了，消息队列就会取出排在第一位的那条消息，传入程序。程序开始执行对应的回调函数，等到执行完，再处理下一条消息。  
 
+
 ## Event Loop
 
 所谓Event Loop机制，指的是一种内部循环，用来一轮又一轮地处理消息队列之中的消息，即执行对应的回调函数。
@@ -46,7 +47,7 @@ JavaScript运行时，除了一个运行线程，引擎还提供一个消息队�
 Wikipedia的定义是：“Event Loop是一个程序结构，用于等待和发送消息和事件（a programming construct that waits for and dispatches events or messages in a program）”。可以就把Event Loop理解成动态更新的消息队列本身。
 
 下面是一些常见的JavaScript任务。<br>
-1. 执行JavaScript代码<br>
+1. <font color=#0099ff >执行JavaScript代码 </font><br>
 2. 对用户的输入（包含鼠标点击、键盘输入等等）做出反应<br>
 3. 处理异步的网络请求
 
