@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JAVASCRIPT之单线程模型"
+title:  "JavaScript之单线程模型"
 categories: JAVASCRIPT
 tags: 单线程 模型 JAVASCRIPT
 author: DCX
