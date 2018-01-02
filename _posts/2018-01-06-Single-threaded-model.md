@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "call() 和 apply() 的区别？ "
+title:  "单线程模型"
 categories: JAVASCRIPT
-tags:  call apply 区别
+tags: 单线程 模型 JAVASCRIPT
 author: DCX
 ---
 
