@@ -46,11 +46,11 @@ JavaScript运行时，除了一个运行线程，引擎还提供一个消息队�
 Wikipedia的定义是：“Event Loop是一个程序结构，用于等待和发送消息和事件（a programming construct that waits for and dispatches events or messages in a program）”。可以就把Event Loop理解成动态更新的消息队列本身。
 
 下面是一些常见的JavaScript任务。<br>
-<font color=green>1. 执行JavaScript代码<br>
+1. 执行JavaScript代码<br>
 2. 对用户的输入（包含鼠标点击、键盘输入等等）做出反应<br>
-3. 处理异步的网络请求</font>
+3. 处理异步的网络请求
 
-所有任务可以分成**两种**，一种是<font color=green>同步任务（synchronous）</font>，另一种是<font color=green>异步任务（asynchronous）</font>。
+所有任务可以分成**两种**，一种是同步任务（synchronous）,另一种是异步任务(asynchronous）。
 
 同步任务指的是，在JavaScript执行进程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入JavaScript执行进程、而进入“任务队列”（task queue）的任务，只有“任务队列”通知主进程，某个异步任务可以执行了，该任务（采用回调函数的形式）才会进入JavaScript进程执行。
 
