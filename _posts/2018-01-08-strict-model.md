@@ -100,18 +100,14 @@ eval、arguments不可用作标识名
 函数不能有重名的参数
 
 正常模式下，如果函数有多个重名的参数，可以用arguments[i]读取。严格模式下，这属于语法错误。
+![](https://i.loli.net/2018/01/04/5a4e4e03aaab8.jpg)
 
-function f(a, a, b) { // 语法错误
-  'use strict';
-  return a + b;
-}
 
 禁止八进制的前缀0表示法
 
 正常模式下，整数的第一位如果是0，表示这是八进制数，比如0100等于十进制的64。严格模式禁止这种表示法，整数第一位为0，将报错。
 
-"use strict";
-var n = 0100; // SyntaxError
+![](https://i.loli.net/2018/01/04/5a4e4e3241e16.jpg)
 
 
 
