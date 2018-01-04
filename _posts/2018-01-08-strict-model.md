@@ -95,16 +95,7 @@ eval、arguments不可用作标识名
 
 下面的语句都会报错。
 
-'use strict';
-var eval = 17;
-var arguments = 17;
-var obj = { set p(arguments) { } };
-try { } catch (arguments) { }
-function x(eval) { }
-function arguments() { }
-var y = function eval() { };
-var f = new Function('arguments', "'use strict'; return 17;");
-// SyntaxError: Unexpected eval or arguments in strict mode
+![](https://i.loli.net/2018/01/04/5a4e4da2039b3.jpg)
 
 函数不能有重名的参数
 
