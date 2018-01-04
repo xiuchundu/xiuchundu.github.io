@@ -67,67 +67,27 @@ use strict放在函数体的第一行，则整个函数以“严格模式”运�
 只读属性不可写
 
 严格模式下，设置字符串的length属性，会报错。
-
-'use strict';
-'abc'.length = 5;
-// TypeError: Cannot assign to read only property 'length' of string 'abc'
+![](https://i.loli.net/2018/01/04/5a4e4c1348a01.jpg)
 
 这是因为length是只读属性。
 
-var str = Object('abc');
-Object.getOwnPropertyDescriptor(str, 'length')
-// Object {
-//   value: 3,
-//   writable: false,
-//   enumerable: false,
-//   configurable: false
-// }
+![](https://i.loli.net/2018/01/04/5a4e4c654de1a.jpg)
 
 严格模式下，对只读属性赋值，或者删除不可配置（nonconfigurable）属性都会报错。
 
-// 对只读属性赋值会报错
-'use strict';
-var o = {};
-
-Object.defineProperty(o, 'a', {
-  value: 37,
-  writable: false
-});
-
-o.a = 123;
-// TypeError: Cannot assign to read only property 'a' of object #<Object>
-
-// 删除不可配置的属性会报错
-'use strict';
-var o = Object.defineProperty({}, 'p', {
-  value: 1,
-  configurable: false
-});
-
-delete o.p
-// TypeError: Cannot delete property 'p' of #<Object>
+![](https://i.loli.net/2018/01/04/5a4e4cac169e7.jpg)
 
 只设置了赋值器的属性不可写
 
 严格模式下，对一个只设置了赋值器（getter）的属性赋值，会报错。
 
-'use strict';
-
-var o = {
-  get v() { return 1; }
-};
-
-o.v = 2; // 报错
+![](https://i.loli.net/2018/01/04/5a4e4cf227fb2.jpg)
 
 禁止扩展的对象不可扩展
 
 严格模式下，对禁止扩展的对象添加新属性，会报错。
+![](https://i.loli.net/2018/01/04/5a4e4d39a6edc.jpg)
 
-'use strict';
-
-var o = {};
-Object.preventExtensions(o);
-o.v = 1; // 报错
 
 eval、arguments不可用作标识名
 
