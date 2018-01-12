@@ -15,6 +15,9 @@ author: DCX
 下面是vis.js的模块： 
 
 
+
+
+
 ![](http://img.blog.csdn.net/20170930200142755?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRENYX2FiYw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## 数据集（DataSet）：
 灵活的键/值对，可添加、更新和删除项目。DataSet可以过滤和订制项目，转换项目领域。Vis.js带有一个灵活的数据集，其可以用于保持和操纵非结构化数据并监听数据的变化。该数据集是基于键/值对的。数据项可以被添加，从DataSet更新和删除，并且可以订阅DataSet中的变化。数据集中的数据可以被过滤和排序，以及字段（例如日期）可以被转换为特定的类型。
