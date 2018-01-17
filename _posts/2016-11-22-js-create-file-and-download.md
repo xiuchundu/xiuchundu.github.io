@@ -35,7 +35,6 @@ function createAndDownloadFile(fileName, content) {
 
 
 
-
 ![](https://img.alicdn.com/tfs/TB16.GnOpXXXXXdapXXXXXXXXXX-307-134.png)
 
 ## Blob 对象
