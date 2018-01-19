@@ -15,6 +15,7 @@ tags: JavaScript 闭包 慕课网 ife
 
 
 
+
 ## 闭包的例子
 
     function outer() {
