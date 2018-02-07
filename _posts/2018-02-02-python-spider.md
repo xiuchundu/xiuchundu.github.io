@@ -128,6 +128,5 @@ author: DCX
 	if __name__ == '__main__':
 	    main()
 
-
 输出：和前面一样。
 
