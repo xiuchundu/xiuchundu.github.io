@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "一个简单的爬虫实例"
+title:  "一个简单的爬虫实例 "
 categories: JAVASCRIPT
-tags:爬虫 Python 实例
+tags: JAVASCRIPT 
 author: DCX
 ---
 
