@@ -2,7 +2,7 @@
 layout: post
 title:  "一个简单的爬虫实例"
 categories: JAVASCRIPT
-tags: 二维码
+tags: 二爬
 author: DCX
 ---
 
