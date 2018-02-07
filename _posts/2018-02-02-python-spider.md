@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "JavaScript实现链接转为二维码 "
-categories: JAVASCRIPT
-tags: 二维码 链接 JAVASCRIPT
+title:  "一个简单的爬虫实例"
+categories: Python
+tags:爬虫 Python 实例
 author: DCX
 ---
 
