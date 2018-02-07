@@ -17,6 +17,10 @@ author: DCX
     分析html中图片的html标签特征，用正则解析出所有的图片url链接列表；
     根据图片的url链接列表将图片下载到本地文件夹中。
 
+
+
+
+
 ## 2. urllib+re实现
 
 	#!/usr/bin/python
