@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript 函数"
-date:   2015-06-11 14:06:05
+date:   2017-08-11 14:06:05
 categories: JavaScript
 tags: JavaScript 函数 慕课网 ife
 ---

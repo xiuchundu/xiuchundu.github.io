@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "JavaScript语法、对象、函数"
+date:   2017-10-18 16:06:05
 categories: JavaScript
 tags:  对象 函数 this 闭包 面向对象 作用域
 ---

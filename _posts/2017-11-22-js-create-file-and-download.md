@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "使用 JavaScript 创建并下载文件"
+date:   2017-11-22 15:26:05
 categories: JavaScript
 tags:  文件 下载 JavaScript
 author: DCX
