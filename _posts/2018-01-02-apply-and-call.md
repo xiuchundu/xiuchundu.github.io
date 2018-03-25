@@ -13,8 +13,9 @@ author: DCX
 两个方法产生的作用是完全一样的，都用来改变当前函数调用的对象。
 
 ## 不同点：调用的参数不同，来个精辟的总结：
+```js
     foo.call(this,arg1,arg2,arg3) == foo.apply(this, arguments)==this.foo(arg1, arg2, arg3)
-
+```
 
 
 ## 具体的使用
@@ -22,8 +23,9 @@ author: DCX
 ## 1.call的使用
 
 语法
+```js
 call([thisObj[,arg1[, arg2[, [,.argN]]]]])
-
+```
 参数
 thisObj  可选项。将被用作当前对象的对象。
 arg1,arg2, , argN  可选项。将被传递方法参数序列。
@@ -33,6 +35,7 @@ arg1,arg2, , argN  可选项。将被传递方法参数序列。
 call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。
 
 示例
+```js
 <input id="myText">  
     
     function Obj()  
@@ -48,12 +51,13 @@ call 方法可以用来代替另一个对象调用一个方法。call 方法可�
     Fun1.call(document.getElementById('myText'));  //input text  
     Fun1.call(new Obj());   //对象！  
   
-
+```
 ## 2.apply()
 
 apply与call的功能几乎一样，第一个参数意义都一样，只是第二个参数有点不同apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，call从第二个参数开始，依次传值给调用函数的参数。 
 
 ## 3.代码比较
+```js
     function print(a, b, c, d){  
       alert(a + b + c + d);  
     }  
@@ -69,3 +73,4 @@ apply与call的功能几乎一样，第一个参数意义都一样，只是第�
     }  
     //下面将显示”勤奋执着”  
     example("勤" , "奋" , "执", "着");  
+```
