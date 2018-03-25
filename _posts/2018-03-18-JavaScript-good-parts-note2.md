@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "JavaScript 语言精粹笔记2-继承、数组、正则表达式"
+title:  "JavaScript 语言精粹笔记2-继承、数组"
 categories: JavaScript
-tags:  继承 对象 原型 Array 正则
+tags:  继承 对象 原型 Array 
 ---
 
 * content
@@ -124,7 +124,7 @@ console.log(myMammal.says()) //Cheers!
 
 ### 部件
 
-这一部分看的不是特别懂，我想等我学完ES2015中的类和模块部分后再看看吧。
+这一部分看的不是特别懂，我想等我学完ES6中的类和模块部分后再看看吧。
 
 ## 数组
 
@@ -132,7 +132,7 @@ console.log(myMammal.says()) //Cheers!
 
 一个数组字面量是在一对方括号中包围零个或多个用逗号分隔的值的表达式。
 
-再大多数语言中，一个数组的多有元素都要求是相同的类型。JavaScript 允许数组包含任意混合类型的值。
+在大多数语言中，一个数组的所有元素都要求是相同的类型。JavaScript 允许数组包含任意混合类型的值。
 
 ### 长度
 
@@ -197,7 +197,7 @@ console.log(is_array(numbers)) //true
 
 JavaScript 的数组不会预制值。
 
-JavaScript 没有多维数组，单项大多数类 C 语言一样，支持元素为数组的数组。
+JavaScript 没有多维数组，和大多数类 C 语言一样，支持元素为数组的数组。
 
 ```js
 var matrix = [
@@ -208,12 +208,3 @@ var matrix = [
 console.log(matrix[1][2]) //6
 ```
 
-## 正则表达式
-
-关于正则表达式，以前的博文写的比较多了，详情见：
-
-[百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分1](http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-10)
-
-[百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分2](http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-12)
-
-[浅谈正则表达式中的分组和引用](http://gaohaoyang.github.io/2016/05/06/regular-expression-group/)
