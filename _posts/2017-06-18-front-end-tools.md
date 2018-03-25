@@ -13,6 +13,15 @@ excerpt: 记录一些好用的前端工具和框架。
 这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。
 
 ---
+## 开发工具
+* [sublime Text](https://www.sublimetext.com/) 
+
+    Sublime Text具有漂亮的用户界面和强大的功能，例如代码缩略图，Python的插件，代码段等。还可自定义键绑定，菜单和工具栏。Sublime Text 的主要功能包括：拼写检查，书签，完整的 Python API ， Goto 功能，即时项目切换，多选择，多窗口等等。Sublime Text 是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统。
+
+* [EditPlus](https://www.editplus.com/)
+    EditPlus是一款由韩国 Sangil Kim （ES-Computing）出品的小巧但是功能强大的可处理文本、HTML和程序语言的Windows编辑器，你甚至可以通过设置用户工具将其作为C,Java,Php等等语言的一个简单的IDE。
+
+---
 
 ## 色彩与图标
 
