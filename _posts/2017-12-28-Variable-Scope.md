@@ -68,6 +68,7 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 
 虽然是strict模式，但语句var x = 'Hello, ' + y;并不报错，原因是变量y在稍后申明了。但是console.log显示Hello, undefined，说明变量y的值为undefined。这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。
 对于上述foo()函数，JavaScript引擎看到的代码相当于：
+
     function foo() {
     	var y; // 提升变量y的申明，此时y为undefined
     	var x = 'Hello, ' + y;
