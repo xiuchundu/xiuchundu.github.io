@@ -29,8 +29,7 @@ author: DCX
 
 
 
-    'use strict';
-    
+    'use strict';  
     function foo() {
     	var x = 1;
     	x = x + 1;
@@ -43,7 +42,6 @@ author: DCX
 
 由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：
     'use strict';
-    
     function foo() {
     	var x = 1;
     	function bar() {
@@ -59,7 +57,6 @@ author: DCX
 JavaScript的函数定义有个特点，它会先扫描整个函数体的语句，把所有申明的变量“提升”到函数顶部：
 
     'use strict';
-    
     function foo() {
     	var x = 'Hello, ' + y;
     	console.log(x);
@@ -94,7 +91,6 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 不在任何函数内定义的变量就具有全局作用域。实际上，JavaScript默认有一个全局对象window，全局作用域的变量实际上被绑定到window的一个属性：
 
     'use strict';
-    
     var course = 'Learn JavaScript';
     alert(course); // 'Learn JavaScript'
     alert(window.course); // 'Learn JavaScript'
@@ -104,7 +100,6 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 你可能猜到了，由于函数定义有两种方式，以变量方式var foo = function () {}定义的函数实际上也是一个全局变量，因此，顶层函数的定义也被视为一个全局变量，并绑定到window对象：
 
     'use strict';
-    
     function foo() {
     	alert('foo');
     }
@@ -115,7 +110,6 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 进一步大胆地猜测，我们每次直接调用的alert()函数其实也是window的一个变量：
 
     'use strict';
-    
     window.alert('调用window.alert()');
     // 把alert保存到另一个变量:
     var old_alert = window.alert;
@@ -150,7 +144,6 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 由于JavaScript的变量作用域实际上是函数内部，我们在for循环等语句块中是无法定义具有局部作用域的变量的：
 
     'use strict';
-    
     function foo() {
     	for (var i=0; i<100; i++) {
     	//
@@ -161,7 +154,6 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：
 
     'use strict';
-    
     function foo() {
     	var sum = 0;
     	for (let i=0; i<100; i++) {
@@ -220,7 +212,6 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
 如果需要从一个对象中取出若干属性，也可以使用解构赋值，便于快速获取对象的指定属性：
     
     'use strict';
-    
     var person = {
     	name: '小明',
     	age: 20,
