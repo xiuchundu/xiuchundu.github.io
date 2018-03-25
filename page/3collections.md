@@ -298,6 +298,13 @@ Syntax Theme: Atom Dark or One Dark
 
     首页的卡片翻动效果非常赞。
 
+## 博客评论插件
+
+   [Gitment](https://github.com/imsun/gitment")
+
+   在Jekyll博客添加评论系统:gitment
+
+
 ## Comments
 
 {% include comments.html %}
