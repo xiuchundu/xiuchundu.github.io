@@ -41,6 +41,7 @@ author: DCX
     }
 
 由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：
+
     'use strict';
     function foo() {
     	var x = 1;
