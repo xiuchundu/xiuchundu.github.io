@@ -57,6 +57,7 @@ apply与call的功能几乎一样，第一个参数意义都一样，只是第�
     function print(a, b, c, d){  
       alert(a + b + c + d);  
     }  
+
     function example(a, b , c , d){  
      //用call方式借用print,参数显式打散传递  
      print.call(this, a, b, c, d);  
