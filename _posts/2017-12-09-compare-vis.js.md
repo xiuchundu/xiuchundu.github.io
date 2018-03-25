@@ -42,12 +42,12 @@ author: DCX
 ![](http://img.blog.csdn.net/20170930200827527?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRENYX2FiYw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ## 网络图：
-简单到复杂的可定制样式非常丰富，有较强的交互性。支持大量数据的展示，可动态更新数据动态渲染图形（大赞），支持JSON数据导入。可动态配置样式。 
+简单到复杂的可定制样式非常丰富，有较强的交互性。支持大量数据的展示，可动态更新数据、动态渲染图形（大赞），支持JSON数据导入。可动态配置样式。 
 
 ![](http://img.blog.csdn.net/20170930200918449?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRENYX2FiYw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ## 小结：
-   基本图表如折线图、柱状图等的使用不如同为基于Canvas的echarts图表种类多而全，echarts也相对更美观易用，但是vis.js有多种的3D图表，如果需要展示3D效果可以使用vis.js。
-vis.js的网络关系图样式使用D3.js也是可以做的，只不过vis.js有一些做好的示例效果非常不错，包括过渡动画，布局，样式等都比D3.js要好一些。vis.js是基于Canvas的，而D3.js是基于SVG的，所以在应用场景上可根据需求选择相对合适的一个。
-vis.js的时间轴很不错，需要时间轴的组件或者展示，可以用vis.js来做。
+   (1)基本图表如折线图、柱状图等的使用不如同为基于Canvas的echarts图表种类多而全，echarts也相对更美观易用，但是vis.js有多种的3D图表，如果需要展示3D效果可以使用vis.js。
+   (2)vis.js的网络关系图样式使用D3.js也是可以做的，只不过vis.js有一些做好的示例效果非常不错，包括过渡动画，布局，样式等都比D3.js要好一些。vis.js是基于Canvas的，而D3.js是基于SVG的，所以在应用场景上可根据需求选择相对合适的一个。
+   vis.js的时间轴很不错，需要时间轴的组件或者展示，可以用vis.js来做。
 
