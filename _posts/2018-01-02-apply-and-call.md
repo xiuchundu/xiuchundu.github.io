@@ -51,13 +51,13 @@ call 方法可以用来代替另一个对象调用一个方法。call 方法可�
 
 ## 2.apply()
 
-apply与call的功能几乎一样，第一个参数意义都一样，只是第二个参数有点不同apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，call从第二个参数开始，依次传值给调用函数的参数 
+apply与call的功能几乎一样，第一个参数意义都一样，只是第二个参数有点不同apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，call从第二个参数开始，依次传值给调用函数的参数。 
 
 ## 3.代码比较
     function print(a, b, c, d){  
       alert(a + b + c + d);  
     }  
-    functionexample(a, b , c , d){  
+    function example(a, b , c , d){  
      //用call方式借用print,参数显式打散传递  
      print.call(this, a, b, c, d);  
      //用apply方式借用print, 参数作为一个数组传递,  
