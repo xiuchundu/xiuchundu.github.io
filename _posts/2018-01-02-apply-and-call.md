@@ -39,7 +39,7 @@ call 方法可以用来代替另一个对象调用一个方法。call 方法可�
     {  
        this.value="对象！";  
     }  
-    varvalue="global 变量";  
+    var value="global 变量";  
     function Fun1(a,b){  
        alert(this.value);  
     }  
