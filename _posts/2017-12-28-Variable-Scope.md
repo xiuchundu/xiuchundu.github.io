@@ -16,12 +16,12 @@ author: DCX
 如果一个变量在函数体内部申明，则该变量的作用域为整个函数体，在函数体外不可引用该变量：
 
 ```js
-    'use strict';
-    function foo() {
-    	var x = 1;
-    	x = x + 1;
-    }
-    x = x + 2; // ReferenceError! 无法在函数体外引用变量x
+'use strict';
+function foo() {
+	var x = 1;
+	x = x + 1;
+}
+x = x + 2; // ReferenceError! 无法在函数体外引用变量x
 ```
 
 如果两个不同的函数各自申明了同一个变量，那么该变量只在各自的函数体内起作用。换句话说，不同函数内部的同名变量互相独立，互不影响：
@@ -30,20 +30,20 @@ author: DCX
 
 
 
+```js
+'use strict';  
+function foo() {
+	var x = 1;
+	x = x + 1;
+}
 
-    'use strict';  
-    function foo() {
-    	var x = 1;
-    	x = x + 1;
-    }
-    
-    function bar() {
-		var x = 'A';
-    	x = x + 'B';
-    }
-
+function bar() {
+	var x = 'A';
+	x = x + 'B';
+}
+```
 由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：
-
+```js
     'use strict';
     function foo() {
     	var x = 1;
@@ -52,13 +52,14 @@ author: DCX
    		}
     	var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!
     }
+```
 
 如果内部函数和外部函数的变量名重名,则JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。
 
 ## 变量提升
 
 JavaScript的函数定义有个特点，它会先扫描整个函数体的语句，把所有申明的变量“提升”到函数顶部：
-
+```js
     'use strict';
     function foo() {
     	var x = 'Hello, ' + y;
@@ -67,17 +68,17 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     }
     
     foo();
-
+```
 虽然是strict模式，但语句var x = 'Hello, ' + y;并不报错，原因是变量y在稍后申明了。但是console.log显示Hello, undefined，说明变量y的值为undefined。这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。
 对于上述foo()函数，JavaScript引擎看到的代码相当于：
-
+```js
     function foo() {
     	var y; // 提升变量y的申明，此时y为undefined
     	var x = 'Hello, ' + y;
     	console.log(x);
     	y = 'Bob';
     }
-
+```
   由于JavaScript的这一怪异的“特性”，我们在函数内部定义变量时，请严格遵守“在函数内部首先申明所有变量”这一规则。最常见的做法是用一个var申明函数内部用到的所有变量：
 
     function foo() {
