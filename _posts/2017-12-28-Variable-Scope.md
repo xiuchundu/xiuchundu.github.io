@@ -17,8 +17,8 @@ author: DCX
 
     'use strict';
     function foo() {
-    var x = 1;
-    x = x + 1;
+    	var x = 1;
+    	x = x + 1;
     }
     x = x + 2; // ReferenceError! 无法在函数体外引用变量x
 
@@ -32,24 +32,24 @@ author: DCX
     'use strict';
     
     function foo() {
-    var x = 1;
-    x = x + 1;
+    	var x = 1;
+    	x = x + 1;
     }
     
     function bar() {
-    var x = 'A';
-    x = x + 'B';
+		var x = 'A';
+    	x = x + 'B';
     }
 
 由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：
     'use strict';
     
     function foo() {
-    var x = 1;
-    function bar() {
-    var y = x + 1; // bar可以访问foo的变量x!
-    }
-    var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!
+    	var x = 1;
+    	function bar() {
+    		var y = x + 1; // bar可以访问foo的变量x!
+   		}
+    	var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!
     }
 
 如果内部函数和外部函数的变量名重名,则JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。
@@ -61,9 +61,9 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     'use strict';
     
     function foo() {
-    var x = 'Hello, ' + y;
-    console.log(x);
-    var y = 'Bob';
+    	var x = 'Hello, ' + y;
+    	console.log(x);
+    	var y = 'Bob';
     }
     
     foo();
@@ -71,22 +71,22 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
 虽然是strict模式，但语句var x = 'Hello, ' + y;并不报错，原因是变量y在稍后申明了。但是console.log显示Hello, undefined，说明变量y的值为undefined。这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。
 对于上述foo()函数，JavaScript引擎看到的代码相当于：
     function foo() {
-    var y; // 提升变量y的申明，此时y为undefined
-    var x = 'Hello, ' + y;
-    console.log(x);
-    y = 'Bob';
+    	var y; // 提升变量y的申明，此时y为undefined
+    	var x = 'Hello, ' + y;
+    	console.log(x);
+    	y = 'Bob';
     }
 
   由于JavaScript的这一怪异的“特性”，我们在函数内部定义变量时，请严格遵守“在函数内部首先申明所有变量”这一规则。最常见的做法是用一个var申明函数内部用到的所有变量：
+
     function foo() {
-    var
-    x = 1, // x初始化为1
-    y = x + 1, // y初始化为2
-    z, i; // z和i为undefined
-    // 其他语句:
-    for (i=0; i<100; i++) {
-    ...
-    }
+    	var x = 1, // x初始化为1
+    		y = x + 1, // y初始化为2
+    		z, i; // z和i为undefined
+    	// 其他语句:
+    	for (i=0; i<100; i++) {
+   			 ...
+    	}
     }
 
 ## 全局作用域
@@ -106,7 +106,7 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     'use strict';
     
     function foo() {
-    alert('foo');
+    	alert('foo');
     }
     
     foo(); // 直接调用foo()
@@ -139,7 +139,7 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     
     // 其他函数:
     MYAPP.foo = function () {
-    return 'foo';
+    	return 'foo';
     };
 
 把自己的代码全部放入唯一的名字空间MYAPP中，会大大减少全局变量冲突的可能。
@@ -152,10 +152,10 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     'use strict';
     
     function foo() {
-    for (var i=0; i<100; i++) {
-    //
-    }
-    i += 100; // 仍然可以引用变量i
+    	for (var i=0; i<100; i++) {
+    	//
+    	}
+    	i += 100; // 仍然可以引用变量i
     }
     
 为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：
@@ -163,12 +163,12 @@ JavaScript的函数定义有个特点，它会先扫描整个函数体的语句�
     'use strict';
     
     function foo() {
-    var sum = 0;
-    for (let i=0; i<100; i++) {
-    sum += i;
-    }
+    	var sum = 0;
+    	for (let i=0; i<100; i++) {
+    	sum += i;
+    	}
     // SyntaxError:
-    i += 1;
+    	i += 1;
     }
 
 ## 常量
@@ -222,11 +222,11 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
     'use strict';
     
     var person = {
-    name: '小明',
-    age: 20,
-    gender: 'male',
-    passport: 'G-12345678',
-    school: 'No.4 middle school'
+    	name: '小明',
+    	age: 20,
+    	gender: 'male',
+    	passport: 'G-12345678',
+   	 	school: 'No.4 middle school'
     };
     var {name, age, passport} = person;
     // name, age, passport分别被赋值为对应属性:
@@ -235,16 +235,16 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
 对一个对象进行解构赋值时，同样可以直接对嵌套的对象属性进行赋值，只要保证对应的层次是一致的：
 
     var person = {
-    name: '小明',
-    age: 20,
-    gender: 'male',
-    passport: 'G-12345678',
-    school: 'No.4 middle school',
-    address: {
-    city: 'Beijing',
-    street: 'No.1 Road',
-    zipcode: '100001'
-    }
+    	name: '小明',
+    	age: 20,
+    	gender: 'male',
+    	passport: 'G-12345678',
+    	school: 'No.4 middle school',
+    	address: {
+    	city: 'Beijing',
+    	street: 'No.1 Road',
+    	zipcode: '100001'
+    	}
     };
 
     var {name, address: {city, zip}} = person;
@@ -257,11 +257,11 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
 使用解构赋值对对象属性进行赋值时，如果对应的属性不存在，变量将被赋值为undefined，这和引用一个不存在的属性获得undefined是一致的。如果要使用的变量名和属性名不一致，可以用下面的语法获取：
     
     var person = {
-    name: '小明',
-    age: 20,
-    gender: 'male',
-    passport: 'G-12345678',
-    school: 'No.4 middle school'
+    	name: '小明',
+    	age: 20,
+    	gender: 'male',
+    	passport: 'G-12345678',
+    	school: 'No.4 middle school'
     };
 
     // 把passport属性赋值给变量id:
@@ -274,10 +274,10 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
 解构赋值还可以使用默认值，这样就避免了不存在的属性返回undefined的问题：
 
     var person = {
-    name: '小明',
-    age: 20,
-    gender: 'male',
-    passport: 'G-12345678'
+    	name: '小明',
+    	age: 20,
+    	gender: 'male',
+    	passport: 'G-12345678'
     };
 
     // 如果person对象没有single属性，默认赋值为true:
