@@ -8,7 +8,7 @@ tags:  函数 JavaScript
 * content
 {:toc}
 
-记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。
+记录一下阅读蝴蝶书的笔记，这章为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。
 
 
 
@@ -58,18 +58,17 @@ if (myValue && typeof myValue === 'object') {
 
 ## 糟粕
 
-* 避免使用`with`语句。
+ (1)避免使用`with`语句。
 
-* 避免使用`eval`语句。
+ (2)避免使用`eval`语句。
 
-* `continue`可能会降低运算性能。
+ (3) `continue`可能会降低运算性能。
 
-* 位运算符在 JavaScript 会非常慢。
+ (4)位运算符在 JavaScript 会非常慢。
 
     Java 里，位运算符处理的是整数。JavaScript 没有整数类型，它只有双精度的浮点数，因此，位运算符把它们的数字运算数先转换为整数，执行运算，在转换回去。JavaScript 的执行环境一般接触不到硬件，所以非常慢。
 
-* 避免使用包装对象。`new Object`和`new Array`等。
+(5) 避免使用包装对象。`new Object`和`new Array`等。
 
-* 避免使用`void`。
+(6) 避免使用`void`。
 
-本系列结束。
