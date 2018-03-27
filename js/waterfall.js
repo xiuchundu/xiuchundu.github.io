@@ -28,37 +28,37 @@
       core_tech: 'JavaScript LocalStorage',
       description: '使用AI算法实现自动完成2048游戏的效果，点击按钮自动执行，也可以获取提示，自己操作方向键，完成游戏。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_4.html',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_4.html',
       img_link: 'http://ww2.sinaimg.cn/large/7011d6cfjw1f3ba2krzs0j207005y0sv.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      code_link: 'https://github.com/xiuchundu/small_project',
       title: '输入框即时提示',
       core_tech: 'JavaScript',
       description: '对input监听，使用正在表达式高亮匹配，实现输入联想效果。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_1.html',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_1.html',
       img_link: 'http://ww3.sinaimg.cn/large/7011d6cfjw1f3b9tmyuh2j20au0aaaar.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      code_link: 'https://github.com/xiuchundu/small_project',
       title: '处理兴趣爱好列表',
       core_tech: 'JavaScript',
       description: '对JavaScript正则表达式和字符串的练习。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_2.html',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_4.html',
       img_link: 'http://ww4.sinaimg.cn/large/7011d6cfjw1f3b9w6xpz5j20ae02pgm3.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      code_link: 'https://github.com/xiuchundu/small_project',
       title: '倒计时',
       core_tech: 'JavaScript',
       description: 'setInterval()，Date 对象的学习和使用。'
     },{
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_5.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      code_link: 'https://github.com/xiuchundu/small_project',
       title: '拖拽交互',
       core_tech: 'JavaScript',
       description: '对鼠标事件应用，以及判断定位的方法等。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/index.html',
+      demo_link: 'http://duchunxiu.cn/small_project/index.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-demo-index.png',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      code_link: 'https://github.com/xiuchundu/small_project',
       title: '百度前端学院 task0002 展示主页',
       core_tech: 'HTML CSS',
       description: '任务二的展示主页，里面包含五个小 demo。还有一篇相关的<a href="http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/" target="_blank">日志。</a>'
