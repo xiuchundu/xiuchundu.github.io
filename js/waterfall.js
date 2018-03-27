@@ -28,13 +28,6 @@
       core_tech: 'JavaScript LocalStorage',
       description: '使用AI算法实现自动完成2048游戏的效果，点击按钮自动执行，也可以获取提示，自己操作方向键，完成游戏。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
-      title: '拖拽交互',
-      core_tech: 'JavaScript',
-      description: '对鼠标事件应用，以及判断定位的方法等。'
-    }, {
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_4.html',
       img_link: 'http://ww2.sinaimg.cn/large/7011d6cfjw1f3ba2krzs0j207005y0sv.jpg',
       code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
@@ -62,6 +55,13 @@
       title: '处理兴趣爱好列表',
       core_tech: 'JavaScript',
       description: '对JavaScript正则表达式和字符串的练习。'
+    },{
+      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
+      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
+      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      title: '拖拽交互',
+      core_tech: 'JavaScript',
+      description: '对鼠标事件应用，以及判断定位的方法等。'
     }, {
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/index.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-demo-index.png',
