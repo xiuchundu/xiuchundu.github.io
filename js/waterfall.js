@@ -15,7 +15,7 @@
   var demoContent = [
      {
       demo_link: 'https://xiuchundu.github.io/Poker_switch_animation/',
-      img_link: 'https://i.loli.net/2018/03/27/5ab9e9eaddc5a.jpg',
+      img_link: 'https://i.loli.net/2018/03/27/5ab9eaaf88535.jpg',
       code_link: 'https://github.com/xiuchundu/Poker_switch_animation',
       title: '扑克洗牌动画特效',
       core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
