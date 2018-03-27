@@ -48,13 +48,6 @@
       title: '倒计时',
       core_tech: 'JavaScript',
       description: 'setInterval()，Date 对象的学习和使用。'
-    }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_1.html',
-      img_link: 'http://ww3.sinaimg.cn/large/7011d6cfjw1f3b9tmyuh2j20au0aaaar.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
-      title: '处理兴趣爱好列表',
-      core_tech: 'JavaScript',
-      description: '对JavaScript正则表达式和字符串的练习。'
     },{
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_5.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
@@ -97,6 +90,13 @@
       title: '仿知乎页面',
       core_tech: 'HTML BootStrap',
       description: '使用BootStrap仿照知乎做了一个静态页面。'
+    }, {
+      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_1.html',
+      img_link: 'http://ww3.sinaimg.cn/large/7011d6cfjw1f3b9tmyuh2j20au0aaaar.jpg',
+      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
+      title: '处理兴趣爱好列表',
+      core_tech: 'JavaScript',
+      description: '对JavaScript正则表达式和字符串的练习。'
     }
   ];
 
