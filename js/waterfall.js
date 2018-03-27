@@ -14,20 +14,6 @@
      */
   var demoContent = [
     {
-      demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
-      code_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      title: 'Fisher-Yates 洗牌算法动画',
-      core_tech: 'JavaScript',
-      description: 'Fisher-Yates 洗牌算法动画。算法详情见 <a href ="https://gaohaoyang.github.io/2016/10/16/shuffle-algorithm/">这里</a>。'
-    }, {
-      demo_link: 'http://gaohaoyang.github.io/test/headerTransition/',
-      img_link: 'https://ooo.0o0.ooo/2016/06/20/5768c1597d1fe.png',
-      code_link: 'https://github.com/Gaohaoyang/test/tree/master/headerTransition',
-      title: 'Header Transition 渐变动画',
-      core_tech: 'jQuery BootStrap CSS3',
-      description: '花费不到半小时帮师兄做了一个简单的 CSS3 动画效果，当页面滚动到指定距离时，header 区的背景色由透明变为蓝色。仿照了网站 <a href ="https://quorrajs.org/">https://quorrajs.org/</a> 的 Header 区动画效果。'
-    }, {
       demo_link: 'http://gaohaoyang.github.io/mask-fade-out/',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-fade-out.png',
       code_link: 'https://github.com/Gaohaoyang/mask-fade-out',
@@ -111,20 +97,6 @@
       title: 'CSS3 阴影特效',
       core_tech: 'CSS3',
       description: 'CSS3 中的阴影、旋转等效果，制作出曲边阴影和翘边阴影。'
-    }, {
-      demo_link: 'http://gaohaoyang.github.io/learning-AngularJS/2-3-bookstore-add-sth-by-myself/',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/DemoAngularJS.png',
-      code_link: 'https://github.com/Gaohaoyang/learning-AngularJS/tree/master/2-3-bookstore-add-sth-by-myself',
-      title: 'AngularJS 结合动画效果',
-      core_tech: 'AngularJS CSS3',
-      description: '使用 AngularJS 中的 ngAnimate 加 CSS3里面的一些旋转效果，做出页面切换的效果。'
-    }, {
-      demo_link: 'http://gaohaoyang.github.io/learning-AngularJS/2-4-UiRouterPractice',
-      img_link: 'http://ww2.sinaimg.cn/large/7011d6cfjw1f3b8zumfqij20q40nh76x.jpg',
-      code_link: 'https://github.com/Gaohaoyang/learning-AngularJS/tree/master/2-4-UiRouterPractice',
-      title: 'AngularJS UI-router 练习',
-      core_tech: 'AngularJS UI-router',
-      description: 'UI-router 作为 AngularJS 中路由的扩充，实现了多级路由的效果。使得前端界面跳转更加方便。'
     }, {
       demo_link: 'http://gaohaoyang.github.io/test/bootstrap-zhihu/',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg',
