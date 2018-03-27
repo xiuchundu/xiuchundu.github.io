@@ -13,16 +13,9 @@
      * 内容JSON
      */
   var demoContent = [
-    {
-      demo_link: 'http://gaohaoyang.github.io/mask-fade-out/',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-fade-out.png',
-      code_link: 'https://github.com/Gaohaoyang/mask-fade-out',
-      title: '遮罩层按指定路径缩小消失',
-      core_tech: 'jQuery CSS',
-      description: '使用 animate 方法，做到兼容 IE8。曾在联想服务官网上线3个月。'
-    }, {
+     {
       demo_link: 'https://xiuchundu.github.io/Poker_switch_animation/',
-      img_link: 'https://i.imgur.com/y4pxMdx.jpg',
+      img_link: 'https://i.imgur.com/xrYS6Nh.jpg',
       code_link: 'https://github.com/xiuchundu/Poker_switch_animation',
       title: '扑克洗牌动画特效',
       core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
