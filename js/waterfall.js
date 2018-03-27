@@ -35,12 +35,12 @@
       core_tech: 'JavaScript',
       description: '对input监听，使用正在表达式高亮匹配，实现输入联想效果。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_3.html',
-      img_link: 'http://ww2.sinaimg.cn/large/7011d6cfjw1f3ba04okoqj20eq093wh1.jpg',
+      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_1.html',
+      img_link: 'http://ww3.sinaimg.cn/large/7011d6cfjw1f3b9tmyuh2j20au0aaaar.jpg',
       code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
-      title: '轮播图',
+      title: '处理兴趣爱好列表',
       core_tech: 'JavaScript',
-      description: '变速运动，运动终止条件的应用。'
+      description: '对JavaScript正则表达式和字符串的练习。'
     }, {
       demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_2.html',
       img_link: 'http://ww4.sinaimg.cn/large/7011d6cfjw1f3b9w6xpz5j20ae02pgm3.jpg',
@@ -91,13 +91,14 @@
       core_tech: 'HTML BootStrap',
       description: '使用BootStrap仿照知乎做了一个静态页面。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_1.html',
-      img_link: 'http://ww3.sinaimg.cn/large/7011d6cfjw1f3b9tmyuh2j20au0aaaar.jpg',
+      demo_link: 'http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/task0002_3.html',
+      img_link: 'http://ww2.sinaimg.cn/large/7011d6cfjw1f3ba04okoqj20eq093wh1.jpg',
       code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang',
-      title: '处理兴趣爱好列表',
+      title: '轮播图',
       core_tech: 'JavaScript',
-      description: '对JavaScript正则表达式和字符串的练习。'
+      description: '变速运动，运动终止条件的应用。'
     }
+
   ];
 
   contentInit(demoContent) //内容初始化
