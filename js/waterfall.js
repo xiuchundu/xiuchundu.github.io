@@ -42,7 +42,7 @@
       core_tech: 'JavaScript',
       description: '对JavaScript正则表达式和字符串的练习。'
     }, {
-      demo_link: 'http://duchunxiu.cn/small_project/task0002_4.html',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_2.html',
       img_link: 'http://ww4.sinaimg.cn/large/7011d6cfjw1f3b9w6xpz5j20ae02pgm3.jpg',
       code_link: 'https://github.com/xiuchundu/small_project',
       title: '倒计时',
