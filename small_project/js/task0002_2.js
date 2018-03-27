@@ -10,15 +10,17 @@ $.click("button", function() {
 
     if (pattern.test(inputValue)) {
         console.log("right");
-        var futureTime = new Date(inputValue.replace("-", "/"));
+        var futureTime = new Date(inputValue.replace("/-/", "/"));
+        //var futureTime = inputValue.replace("/-/", "/");
         var futureTimeArr = inputValue.split("-");
-
         clock = setInterval(count, 900);
 
         function count() {
             var currentTime = new Date();
             console.log(futureTime);
             console.log(currentTime);
+            //alert("futureTime"+futureTime);
+            //alert("currentTime"+currentTime);
             var gap = futureTime - currentTime;
             if (gap < 0) {
                 clearInterval(clock);
@@ -36,6 +38,7 @@ $.click("button", function() {
                 console.log(day + "  " + hour + "   " + minute + "   " + second);
 
                 showDiv.innerHTML = "距离" + futureTimeArr[0] + "年" + futureTimeArr[1] + "月" + futureTimeArr[2] + "日还有" + day + "天" + hour + "小时" + minute + "分" + second + "秒";
+                showDiv.style.color  = 'red';
             }
         }
     } else {
