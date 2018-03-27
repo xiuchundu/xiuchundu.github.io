@@ -136,8 +136,8 @@ h1{
 .move{
     width: 200px;
     height: 59px;
-    background-color: #929BDD;
-    border-bottom:1px solid #333;
+    background-color: green;
+    border-bottom:1px solid red;
     position: absolute;
     text-align: center;
     color: #fff;
