@@ -70,9 +70,9 @@
       core_tech: 'CSS3',
       description: 'CSS3 中的阴影、旋转等效果，制作出曲边阴影和翘边阴影。'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/test/bootstrap-zhihu/',
+      demo_link: 'http://duchunxiu.cn/small_project/bootstrap-zhihu/',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg',
-      code_link: 'https://github.com/Gaohaoyang/test/tree/master/bootstrap-zhihu',
+      code_link: 'https://github.com/xiuchundu/xiuchundu.github.io/tree/master/bootstrap-zhihu',
       title: '仿知乎页面',
       core_tech: 'HTML BootStrap',
       description: '使用BootStrap仿照知乎做了一个静态页面。'
