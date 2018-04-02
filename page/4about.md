@@ -11,7 +11,7 @@ type: page
 
 ## 关于我
 
-<iframe src="https://avatars3.githubusercontent.com/u/25915372?s=460&v=4" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+![](https://avatars3.githubusercontent.com/u/25915372?s=460&v=4)
 
 就读于中南大学信息科学与工程学院计算机专业，2016年入学，目前研二。
 
