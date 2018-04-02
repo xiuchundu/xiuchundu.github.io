@@ -14,18 +14,18 @@
      */
   var demoContent = [
      {
-      demo_link: 'https://xiuchundu.github.io/Poker_switch_animation/',
-      img_link: 'https://i.loli.net/2018/03/27/5ab9eaaf88535.jpg',
-      code_link: 'https://github.com/xiuchundu/Poker_switch_animation',
-      title: '扑克洗牌动画特效',
-      core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
-      description: '实现了扑克洗牌动画特效，扑克洗牌动画特效'
+      demo_link: 'http://duchunxiu.cn/Radar_scanning_animation/',
+      img_link: 'https://i.imgur.com/5FQADow.png',
+      code_link: 'https://github.com/xiuchundu/Radar_scanning_animation',
+      title: 'CSS3雷达扫描',
+      core_tech: 'CSS3',
+      description: '纯CSS3雷达扫描模拟动画'
     }, {
       demo_link: 'https://xiuchundu.github.io/AI_for_2048/',
       img_link: 'https://i.loli.net/2018/03/27/5ab9eca63205e.jpg',
       code_link: 'https://github.com/xiuchundu/AI_for_2048',
       title: 'AI_for_2048',
-      core_tech: 'JavaScript LocalStorage',
+      core_tech: 'JavaScript',
       description: '使用AI算法实现自动完成2048游戏的效果，点击按钮自动执行，也可以获取提示，自己操作方向键，完成游戏。'
     }, {
       demo_link: 'http://duchunxiu.cn/small_project/task0002_4.html',
