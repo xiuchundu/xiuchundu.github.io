@@ -15,7 +15,7 @@
   var demoContent = [
      {
       demo_link: 'http://duchunxiu.cn/Radar_scanning_animation/',
-      img_link: 'https://i.imgur.com/5FQADow.png',
+      img_link: 'https://i.imgur.com/4UKovCv.png',
       code_link: 'https://github.com/xiuchundu/Radar_scanning_animation',
       title: 'CSS3雷达扫描',
       core_tech: 'CSS3',
