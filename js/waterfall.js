@@ -63,20 +63,6 @@
       core_tech: 'HTML CSS',
       description: '任务二的展示主页，里面包含五个小 demo。还有一篇相关的<a href="http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/" target="_blank">日志。</a>'
     }, {
-      demo_link: 'http://gaohaoyang.github.io/ife/task/task0001/work/Gaohaoyang/index.html',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/Demo-blog-ife.jpg',
-      code_link: 'https://github.com/Gaohaoyang/ife/tree/master/task/task0001/work/Gaohaoyang',
-      title: '百度前端学院 task0001 个人博客',
-      core_tech: 'HTML CSS',
-      description: '完成百度前端学院的任务。深刻的理解了BFC、浮动、inline-block间距，多列布局等技术。还有一篇相关的<a href="http://gaohaoyang.github.io/2015/04/15/baidu-ife-1/" target="_blank">日志。</a>'
-    }, {
-      demo_link: 'http://gaohaoyang.github.io/ghost-button-css3/',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/DemoGhost-Button.png',
-      code_link: 'https://github.com/Gaohaoyang/ghost-button-css3',
-      title: 'Ghost Button 幽灵按钮',
-      core_tech: 'CSS3',
-      description: '使用 CSS3 中的旋转、缩放、过渡、动画等效果，制作出很酷的按钮效果。'
-    }, {
       demo_link: 'http://gaohaoyang.github.io/shadow-demo-css3',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/Demoshadow.png',
       code_link: 'https://github.com/Gaohaoyang/shadow-demo-css3',
