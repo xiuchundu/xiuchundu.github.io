@@ -42,13 +42,13 @@
       core_tech: 'JavaScript',
       description: '对JavaScript正则表达式和字符串的练习。'
     }, {
-      demo_link: 'http://duchunxiu.cn/small_project/task0002_2.html',
-      img_link: 'http://ww4.sinaimg.cn/large/7011d6cfjw1f3b9w6xpz5j20ae02pgm3.jpg',
-      code_link: 'https://github.com/xiuchundu/small_project',
-      title: '倒计时',
+      demo_link: 'https://xiuchundu.github.io/3D_change_image/',
+      img_link: 'https://i.loli.net/2018/03/27/5ab9f2e223414.png',
+      code_link: 'https://github.com/xiuchundu/3D_change_image',
+      title: '轮播图',
       core_tech: 'JavaScript',
-      description: 'setInterval()，Date 对象的学习和使用。'
-    },{
+      description: '使用JavaScript完成简单的轮播图。'
+    }, {
       demo_link: 'http://duchunxiu.cn/small_project/task0002_5.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
       code_link: 'https://github.com/xiuchundu/small_project',
@@ -91,12 +91,12 @@
       core_tech: 'HTML BootStrap',
       description: '使用BootStrap仿照知乎做了一个静态页面。'
     }, {
-      demo_link: 'https://xiuchundu.github.io/3D_change_image/',
-      img_link: 'https://i.loli.net/2018/03/27/5ab9f2e223414.png',
-      code_link: 'https://github.com/xiuchundu/3D_change_image',
-      title: '轮播图',
+      demo_link: 'http://duchunxiu.cn/small_project/task0002_2.html',
+      img_link: 'http://ww4.sinaimg.cn/large/7011d6cfjw1f3b9w6xpz5j20ae02pgm3.jpg',
+      code_link: 'https://github.com/xiuchundu/small_project',
+      title: '倒计时',
       core_tech: 'JavaScript',
-      description: '使用JavaScript完成简单的轮播图。'
+      description: 'setInterval()，Date 对象的学习和使用。'
     }
 
   ];
