@@ -32,28 +32,28 @@ Readline是Node.js里实现标准输入输出的封装好的模块，通过这�
 
 代码如下：
 
-```
-// 引入readline模块
-var readline = require('readline');
-
-//创建readline接口实例
-var  rl = readline.createInterface({
-    input:process.stdin,
-    output:process.stdout
-});
-
-// question方法
-rl.question("你的名字是？",function(answer){
-    console.log("我的名字是："+answer);
-    // 不加close，则程序不会结束
-    rl.close();
-});
-
-// close事件监听
-rl.on("close", function(){
-   // 结束程序
-    process.exit(0);
-});
+```js
+	// 引入readline模块
+	var readline = require('readline');
+	
+	//创建readline接口实例
+	var  rl = readline.createInterface({
+	    input:process.stdin,
+	    output:process.stdout
+	});
+	
+	// question方法
+	rl.question("你的名字是？",function(answer){
+	    console.log("我的名字是："+answer);
+	    // 不加close，则程序不会结束
+	    rl.close();
+	});
+	
+	// close事件监听
+	rl.on("close", function(){
+	   // 结束程序
+	    process.exit(0);
+	});
 ```
 
  
@@ -65,70 +65,70 @@ rl.on("close", function(){
 
  
 ## 实例2：输入与输出
-```
-// 引入readline模块
-var readline = require('readline');
-
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.on('line', function(line){
-    switch(line.trim()) {
-        case 'copy':
-            console.log("复制");
-            break;
-        case 'hello':
-            rl.write("Write");
-            console.log('world!');
-            break;
-        case 'close':
-            rl.close();
-            break;
-        default:
-            console.log('没有找到命令！');
-            break;
-    }
-});
-rl.on('close', function() {
-    console.log('bye bye');
-    process.exit(0);
-});
+```js
+	// 引入readline模块
+	var readline = require('readline');
+	
+	var rl = readline.createInterface({
+	    input: process.stdin,
+	    output: process.stdout
+	});
+	
+	rl.on('line', function(line){
+	    switch(line.trim()) {
+	        case 'copy':
+	            console.log("复制");
+	            break;
+	        case 'hello':
+	            rl.write("Write");
+	            console.log('world!');
+	            break;
+	        case 'close':
+	            rl.close();
+	            break;
+	        default:
+	            console.log('没有找到命令！');
+	            break;
+	    }
+	});
+	rl.on('close', function() {
+	    console.log('bye bye');
+	    process.exit(0);
+	});
 ```
 
 * `line`事件，这个事件就是在用户输完一行，按下回车后就会触发的事件，它会将用户输入的数据通过回调函数传回来，可在此方法里处理用户输入的数据。
 
 ## 实例3：类似命令行的输入输出
-```
-var readline = require('readline');
-var  rl = readline.createInterface(process.stdin, process.stdout);
-
-rl.setPrompt('Test> ');
-rl.prompt();
-
-rl.on('line', function(line) {
-    switch(line.trim()) {
-        case 'copy':
-            console.log("复制");
-            break;
-        case 'hello':
-            console.log('world!');
-            break;
-        case 'close':
-            rl.close();
-            break;
-        default:
-            console.log('没有找到命令！');
-            break;
-    }
-    rl.prompt();
-});
-
-rl.on('close', function() {
-    console.log('bye bye!');
-    process.exit(0);
-});
+```js
+	var readline = require('readline');
+	var  rl = readline.createInterface(process.stdin, process.stdout);
+	
+	rl.setPrompt('Test> ');
+	rl.prompt();
+	
+	rl.on('line', function(line) {
+	    switch(line.trim()) {
+	        case 'copy':
+	            console.log("复制");
+	            break;
+	        case 'hello':
+	            console.log('world!');
+	            break;
+	        case 'close':
+	            rl.close();
+	            break;
+	        default:
+	            console.log('没有找到命令！');
+	            break;
+	    }
+	    rl.prompt();
+	});
+	
+	rl.on('close', function() {
+	    console.log('bye bye!');
+	    process.exit(0);
+	});
 ```
 
 运行截图如下： 
