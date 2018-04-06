@@ -49,13 +49,6 @@
       core_tech: 'JavaScript',
       description: '使用JavaScript完成简单的轮播图。'
     }, {
-      demo_link: 'http://duchunxiu.cn/small_project/task0002_5.html',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-drag.png',
-      code_link: 'https://github.com/xiuchundu/small_project',
-      title: '拖拽交互',
-      core_tech: 'JavaScript',
-      description: '对鼠标事件应用，以及判断定位的方法等。'
-    }, {
       demo_link: 'http://duchunxiu.cn/small_project/index.html',
       img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-demo-index.png',
       code_link: 'https://github.com/xiuchundu/small_project',
@@ -83,6 +76,13 @@
       title: '倒计时',
       core_tech: 'JavaScript',
       description: 'setInterval()，Date 对象的学习和使用。'
+    }, {
+      demo_link: 'http://duchunxiu.cn/Walking-dog/',
+      img_link: 'https://i.imgur.com/50Rzt68.png',
+      code_link: 'https://github.com/xiuchundu/Walking-dog',
+      title: '小狗随鼠标移动效果',
+      core_tech: 'JavaScript',
+      description: 'setInterval() 算法优化'
     }
 
   ];
