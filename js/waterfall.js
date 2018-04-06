@@ -21,6 +21,13 @@
       core_tech: 'CSS3',
       description: '纯CSS3雷达扫描模拟动画'
     }, {
+      demo_link: 'http://duchunxiu.cn/Walking-dog/',
+      img_link: 'https://i.imgur.com/50Rzt68.png',
+      code_link: 'https://github.com/xiuchundu/Walking-dog',
+      title: '小狗随鼠标移动效果',
+      core_tech: 'JavaScript',
+      description: 'setInterval() 算法优化'
+    }, {
       demo_link: 'https://xiuchundu.github.io/AI_for_2048/',
       img_link: 'https://i.loli.net/2018/03/27/5ab9eca63205e.jpg',
       code_link: 'https://github.com/xiuchundu/AI_for_2048',
@@ -76,14 +83,7 @@
       title: '倒计时',
       core_tech: 'JavaScript',
       description: 'setInterval()，Date 对象的学习和使用。'
-    }, {
-      demo_link: 'http://duchunxiu.cn/Walking-dog/',
-      img_link: 'https://i.imgur.com/50Rzt68.png',
-      code_link: 'https://github.com/xiuchundu/Walking-dog',
-      title: '小狗随鼠标移动效果',
-      core_tech: 'JavaScript',
-      description: 'setInterval() 算法优化'
-    }
+    }, 
 
   ];
 
