@@ -8,29 +8,30 @@ tags: JavaScript Ajax
 * content
 {:toc}
 
-  提到Ajax，我们用的最多的往往是JQuery提供的Ajax方法，那么如何用原生的js怎么去实现Ajax方法呢？其实不难，自己手动撸一个，撸之前，先看看JQuery提供的Ajax方法：
+  提到Ajax，我们用的最多的往往是JQuery提供的Ajax方法，那么如何用原生的js怎么去实现Ajax方法呢？其实不难，自己手动撸一个，在这之前，先看看JQuery提供的Ajax方法：
 
 
 
 
 
 
+## JQuery提供的Ajax
   ```js
-
-		$.ajax({
-		    url: ,
-		    type: '',
-		    dataType: '',
-		    data: {
-		          
-		    },
-		    success: function(){
-		         
-		    },
-		    error: function(){
-		          
-		    }
-		 })
+	
+	$.ajax({
+	    url: ,
+	    type: '',
+	    dataType: '',
+	    data: {
+	          
+	    },
+	    success: function(){
+	         
+	    },
+	    error: function(){
+	          
+	    }
+	 })
 
   ```
 
