@@ -15,7 +15,6 @@ tags:  NodeJs readline
 
 
 
-
 ## Readline
 
 Readline是Node.js里实现标准输入输出的封装好的模块，通过这个模块我们可以以逐行的方式读取数据流。使用require(“readline”)可以引用模块。
