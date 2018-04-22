@@ -10,6 +10,11 @@ tags: JavaScript Ajax
 
   提到Ajax，我们用的最多的往往是JQuery提供的Ajax方法，那么如何用原生的js怎么去实现Ajax方法呢？其实不难，自己手动撸一个，撸之前，先看看JQuery提供的Ajax方法：
 
+
+
+
+
+
   ```js
 
 		$.ajax({
