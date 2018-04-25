@@ -68,7 +68,6 @@ tags: JavaScript Ajax
 ```
 
 
-
 ## 简单描述：
 
 1. `open(method, url, async)`方法需要三个参数:
