@@ -87,12 +87,14 @@ tags: JavaScript Ajax
 3. `onreadystatechange`：存有处理服务器响应的函数，每当 `readyState `改变时，`onreadystatechange` 函数就会被执行。
 
 4.` readyState`：存有服务器响应的状态信息。
+```js
 
     0: 请求未初始化（代理被创建，但尚未调用 open() 方法）
     1: 服务器连接已建立（open方法已经被调用）
     2: 请求已接收（send方法已经被调用，并且头部和状态已经可获得）
     3: 请求处理中（下载中，responseText 属性已经包含部分数据）
     4: 请求已完成，且响应已就绪（下载操作已完成）
+```
 
 5. `responseText`：获得字符串形式的响应数据。
 
