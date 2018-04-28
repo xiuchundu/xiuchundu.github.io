@@ -7,7 +7,6 @@ tags: JavaScript GC  内存管理
 
 * content
 {:toc}
-
 ## 一、垃圾回收机制—GC
 
 Javascript具有自动垃圾回收机制(GC:Garbage Collecation)，也就是说，执行环境会负责管理代码执行过程中使用的内存。
