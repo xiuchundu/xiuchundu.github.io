@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript的垃圾回收机制与内存管理"
 categories: JavaScript
-tags: JavaScript GC  
+tags: JavaScript GC  内存管理
 ---
 
 * content
