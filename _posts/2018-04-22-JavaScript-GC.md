@@ -64,7 +64,6 @@ js中最常用的垃圾回收方式就是标记清除。当变量进入环境时
 引用计数的含义是跟踪记录每个值被引用的次数。当声明了一个变量并将一个引用类型值赋给该变量时，则这个值的引用次数就是1。如果同一个值又被赋给另一个变量，则该值的引用次数加1。相反，如果包含对这个值引用的变量又取得了另外一个值，则这个值的引用次数减1。当这个值的引用次数变成0时，则说明没有办法再访问这个值了，因而就可以将其占用的内存空间回收回来。这样，当垃圾回收器下次再运行时，它就会释放那些引用次数为0的值所占用的内存。
 
 ```js
-
 	function test(){
 	    var a = {} ; //a的引用次数为0 
 	    var b = a ; //a的引用次数加1，为1 
@@ -73,7 +72,7 @@ js中最常用的垃圾回收方式就是标记清除。当变量进入环境时
 	}
 ```
 Netscape Navigator3是最早使用引用计数策略的浏览器，但很快它就遇到一个严重的问题：循环引用。循环引用指的是对象A中包含一个指向对象B的指针，而对象B中也包含一个指向对象A的引用。
-
+```js
     function fn() {
       var a = {};
       var b = {};
@@ -82,13 +81,12 @@ Netscape Navigator3是最早使用引用计数策略的浏览器，但很快它�
     }
      
     fn();
-
+```
 以上代码a和b的引用次数都是2，fn()执行完毕后，两个对象都已经离开环境，在标记清除方式下是没有问题的，但是在引用计数策略下，因为a和b的引用次数不为0，所以不会被垃圾回收器回收内存，如果fn函数被大量调用，就会造成内存泄露。在IE7与IE8上，内存直线上升。
 
 我们知道，IE中有一部分对象并不是原生js对象。例如，其内存泄露DOM和BOM中的对象就是使用C++以COM对象的形式实现的，而COM对象的垃圾回收机制采用的就是引用计数策略。因此，即使IE的js引擎采用标记清除策略来实现，但js访问的COM对象依然是基于引用计数策略的。换句话说，只要在IE中涉及COM对象，就会存在循环引用的问题。
 
 ```js
-
 	var element = document.getElementById(some_element);
 	var myObject = new Object();
 	myObject.e = element;
@@ -99,12 +97,10 @@ Netscape Navigator3是最早使用引用计数策略的浏览器，但很快它�
 看上面的例子，有同学回觉得太弱了，谁会做这样无聊的事情，其实我们是不是就在做:
 
 ```js
-
 	window.onload=function outerFunction(){
 	    var obj = document.getElementById(element);
 	    obj.onclick=function innerFunction(){};
 	};
-
 ```
 这段代码看起来没什么问题，但是obj引用了document.getElementById(“element”)，而document.getElementById(“element”)的onclick方法会引用外部环境中德变量，自然也包括obj，是不是很隐蔽啊。
 
@@ -113,20 +109,16 @@ Netscape Navigator3是最早使用引用计数策略的浏览器，但很快它�
 最简单的方式就是自己手工解除循环引用，比如刚才的函数可以这样:
 
 ```js
-
 	myObject.element = null;
 	element.o = null;
-
 ```
 
 ```js
-
 	window.onload=function outerFunction(){
 	   var obj = document.getElementById(element);
 	   obj.onclick=function innerFunction(){};
 	   obj=null;
 };
-
 ```
 将变量设置为null意味着切断变量与它此前引用的值之间的连接。当垃圾回收器下次运行时，就会删除这些值并回收它们占用的内存。
 
