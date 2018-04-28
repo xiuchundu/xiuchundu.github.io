@@ -146,6 +146,7 @@ Javascript引擎基础GC方案是（simple GC）：mark and sweep（标记清除
 ### GC优化策略
 
 David大叔主要介绍了2个优化方案，而这也是最主要的2个优化方案了：
+
 （1）分代回收（Generation GC）
 
 这个和Java回收策略思想是一致的。目的是通过区分“临时”与“持久”对象；多回收“临时对象”区（young generation），少回收“持久对象”区（tenured generation），减少每次需遍历的对象，从而减少每次GC的耗时。如图：
