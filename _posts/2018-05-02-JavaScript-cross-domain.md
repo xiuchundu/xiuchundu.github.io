@@ -8,7 +8,9 @@ tags: JavaScript 跨域 异常
 * content
 {:toc}
 
- 问题：定义了一个lines-bus.json文件存储公交线路相关信息，在index.html中想通过$.getJSON("data/lines-bus.json" , function(data){...})方法获取并显示json文件中的内容。
+## 问题：
+
+定义了一个lines-bus.json文件存储公交线路相关信息，在index.html中想通过$.getJSON("data/lines-bus.json" , function(data){...})方法获取并显示json文件中的内容。
  结果运行后chrome报错如下： 
 
 
