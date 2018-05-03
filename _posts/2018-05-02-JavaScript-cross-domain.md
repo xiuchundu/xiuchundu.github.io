@@ -44,4 +44,5 @@ tags: JavaScript 跨域 异常
 --enable-file-cookies : 允许chrome保存本地设置cookie
 
 设置方法：chrome快捷方式–右键“属性”–快捷方式–目标 
-![](https://img-blog.csdn.net/20170222112124257?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjc4NjcxNg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![](https://i.imgur.com/yjVwmAz.png)
