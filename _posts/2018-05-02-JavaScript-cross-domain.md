@@ -16,7 +16,7 @@ tags: JavaScript 跨域 异常
 
 
 
-![](https://i.imgur.com/GVhL89s.png)
+![](https://i.loli.net/2018/05/03/5aeaebc739f0e.png)
 
 
 ### 思考： 百度了一下，似乎是Ajax跨域问题。
