@@ -17,6 +17,7 @@ tags: JavaScript 跨域 异常
 
 
 
+
 ![](https://i.imgur.com/0JmL7MG.png)
 
 
@@ -40,7 +41,7 @@ tags: JavaScript 跨域 异常
 ### 解决二：
 查资料，发现还有一种解决方法，不用启动服务器模式，直接更改chrome的设置就行。
 在chrome属性设置中，添加启动参数：
--`-allow-file-access-from-files` : 允许本地Ajax请求，也叫file协议下的Ajax请求
+-`-allow-file-access-from-files`: 允许本地Ajax请求，也叫file协议下的Ajax请求
 `--enable-file-cookies` : 允许chrome保存本地设置cookie
 
 设置方法：chrome快捷方式–右键“属性”–快捷方式–目标 
