@@ -18,6 +18,7 @@ tags:  继承 对象 原型 Array
 
 
 
+
 ### 伪类
 
 JavaScript 通过构造器函数产生对象。
