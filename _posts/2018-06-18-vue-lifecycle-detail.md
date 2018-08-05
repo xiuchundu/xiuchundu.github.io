@@ -32,21 +32,21 @@ tags: vue 生命周期
 	没有el选项，则停止编译，也意味着暂时停止了生命周期，直到vm.$mount(el)
 	示例如下：
 	```js
-	new Vue({
-		el: '#app',
-		beforeCreate: function () {
-			console.log('调用了beforeCreat钩子函数')
-		},
-		created: function () {
-			console.log('调用了created钩子函数')
-		},
-		beforeMount: function () {
-			console.log('调用了beforeMount钩子函数')
-		},
-		mounted: function () {
-			console.log('调用了mounted钩子函数')
-		}
-	})
+		new Vue({
+			el: '#app',
+			beforeCreate: function () {
+				console.log('调用了beforeCreat钩子函数')
+			},
+			created: function () {
+				console.log('调用了created钩子函数')
+			},
+			beforeMount: function () {
+				console.log('调用了beforeMount钩子函数')
+			},
+			mounted: function () {
+				console.log('调用了mounted钩子函数')
+			}
+		})
 ```
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716220834722-1540352575.png)
 
@@ -132,21 +132,21 @@ Vue的编译实际上是指Vue把模板编译成 render 函数的过程。
 用官方文档的例子做个解释：
 
 ```html
-	<div>
-		<header>
-			<h1>I'm a template!</h1>
-		</header>
-		<p v-if="message">
-			{{ message }}
-		</p>
-		<p v-else>
-			No message.
-		</p>
-	</div>
+<div>
+	<header>
+		<h1>I'm a template!</h1>
+	</header>
+	<p v-if="message">
+		{{ message }}
+	</p>
+	<p v-else>
+		No message.
+	</p>
+</div>
 ```
 会被渲染成
 
-```html
+```js
 	function anonymous() {
 	with(this){return _c('div',[_m(0),(message)?_c('p',[_v(_s(message))]):_c('p',[_v("No message.")])])}
 }
