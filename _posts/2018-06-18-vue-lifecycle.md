@@ -16,11 +16,11 @@ tags: vue 生命周期
 
 
 
-![](https://segmentfault.com/img/bVEo3w?w=1200&h=2800)
+![](https://image-static.segmentfault.com/350/409/3504099265-580628fd03258_articlex)
 
 ### 1.1 生命周期钩子
 下图是vue1.0和2.0的对比
-![](https://segmentfault.com/img/bVEs9x?w=847&h=572)
+![](https://image-static.segmentfault.com/334/606/3346068135-580822cd52898_articlex)
 
 ### 1.2 在beforeCreate和created钩子函数间的生命周期
 在beforeCreate和created之间，进行数据观测(data observer)，也就是在这个时候开始监控data中的数据变化了，同时初始化事件。
@@ -99,7 +99,7 @@ tags: vue 生命周期
 
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716220914082-523984759.png)
 
-####1.3.2 template参数选项的有无对生命周期的影响
+###1.3.2 template参数选项的有无对生命周期的影响
 1.如果Vue实例对象中有template参数选项，则将其作为模板编译成render函数。
 2.如果没有template参数选项，则将外部的HTML作为模板编译（template），也就是说，template参数选项的优先级要比外部的HTML高。
 3.如果1,2条件都不具备，则报错。
