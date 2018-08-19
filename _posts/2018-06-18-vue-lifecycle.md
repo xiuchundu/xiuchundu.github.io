@@ -99,7 +99,8 @@ tags: vue 生命周期
 
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716220914082-523984759.png)
 
-###1.3.2 template参数选项的有无对生命周期的影响
+#### 1.3.2 template参数选项的有无对生命周期的影响
+
 1.如果Vue实例对象中有template参数选项，则将其作为模板编译成render函数。
 2.如果没有template参数选项，则将外部的HTML作为模板编译（template），也就是说，template参数选项的优先级要比外部的HTML高。
 3.如果1,2条件都不具备，则报错。
@@ -154,16 +155,20 @@ Vue的编译实际上是指Vue把模板编译成 render 函数的过程。
 ```
 
 ### 1.4 beforeMount和mounted钩子函数间的生命周期
+
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716221246832-16408336.png)
+
 我的理解是这样的：正因为render函数和template选项的“优先级”比外部HTML要高，所以，最后一般会存在一个外部HTML模板被Vue实例本身配置的模板所“替代”的过程也就是上图所说的 “replace”。
 
 ### 1.5 beforeUpdate钩子函数和updated钩子函数间的生命周期
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716221345957-955065712.png)
+
 在Vue中，数据更改会导致虚拟 DOM 重新渲染，并先后调用beforeUpdate钩子函数和updated钩子函数。
  
 但要注意一点：重渲染（调用这两个钩子函数）的前提是被更改的数据已经被写入模板中！
 
 ### 1.6 beforeDestroy和destroyed钩子函数间的生命周期
+
 ![](https://images2015.cnblogs.com/blog/1060770/201707/1060770-20170716221516332-283548713.png)
 
 beforeDestroy钩子函数在实例销毁之前调用。在这一步，实例仍然完全可用。
