@@ -13,6 +13,8 @@ tags: vue 生命周期
 
 
 
+
+
 ![](https://image-static.segmentfault.com/350/409/3504099265-580628fd03258_articlex)
 
 ### 1.1 生命周期钩子
