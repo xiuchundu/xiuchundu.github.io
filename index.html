@@ -60,8 +60,10 @@ layout: default
             <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
             <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
           {% else %}
-            <span class="next disable"><i class="fa fa-angle-right"></i></span>
-            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
+            <!--<span class="next disable"><i class="fa fa-angle-right"></i></span>-->
+            <!--<span class="next disable"><i class="fa fa-angle-double-right"></i></span>-->
+            <span class="next disable">></span>
+            <span class="next disable">>></span>
           {% endif %}
         </div>
     </div>
