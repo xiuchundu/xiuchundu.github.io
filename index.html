@@ -57,8 +57,8 @@ layout: default
           {% endif %}
           <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-            <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+            <a href="{{ paginator.next_page_path }}" class="next">></a>
+            <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next">>></a>
           {% else %}
             <!--<span class="next disable"><i class="fa fa-angle-right"></i></span>-->
             <!--<span class="next disable"><i class="fa fa-angle-double-right"></i></span>-->
