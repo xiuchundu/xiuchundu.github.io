@@ -49,11 +49,11 @@ layout: default
         <!-- Pagination links -->
         <div class="pagination">
           {% if paginator.previous_page %}
-            <a href="/index.html" class="previous"><</a>
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><<</a>
+            <a href="/index.html" class="previous"><<</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><</a>
           {% else %}
-            <span class="previous disable"><</span>
             <span class="previous disable"><<</span>
+            <span class="previous disable"><</span>
           {% endif %}
           <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
