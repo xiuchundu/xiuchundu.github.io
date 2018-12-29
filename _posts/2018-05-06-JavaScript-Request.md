@@ -11,13 +11,11 @@ tags: JavaScript 跨域 异常
 ## 问题：
 
 定义了一个`lines-bus.json`文件存储公交线路相关信息，在index.html中想通过`$.getJSON("data/lines-bus.json" , function(data){...})`方法获取并显示json文件中的内容。
- 结果运行后chrome报错如下： 
-
-
- 
-
-
+ 结果运行后chrome报错如下：
 ![](https://i.imgur.com/0JmL7MG.png)
+
+
+
 
 
 ### 思考： 百度了一下，似乎是Ajax跨域问题。
