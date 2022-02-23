@@ -44,3 +44,20 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
     }
     ```
 
+二.List转为Array
+
+1.实现：使用list.toArray()
+    ```java
+    public class Array2List {
+        public static void main(String[] args){
+            List<String> list=new ArrayList<>();
+            list.add("dog");
+            list.add("cat");
+            list.add("cow");
+            String[] animals=list.toArray(new String[0]);
+            for(String animal:animals){
+                System.out.println(animal);
+            }
+        }
+    }
+    ```
