@@ -15,7 +15,7 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
 
 
 一.Array 转为List
-    ```java
+```java
     public class Array2List {
         public static void main(String[] args){
             List<String> listA=Arrays.asList("dog","cat","cow");
@@ -25,13 +25,13 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
             System.out.println(listB);
         }
     }
-    ```
+```
   
 ### 注意事项 ###
 1）Arrays.asList()方法返回的对象是Arrays的内部类，对list的操作仍然反映在原数组上，因此这个list是定长的，不支持add、remove操作。
 
 2）由于asList方法接受的泛型参数，因此不能用于基本类型，只能使用如下方法：  
-    ```java
+```java
       public class Array2List {
         public static void main(String[] args){
             int[] a={1,2,3,4,5};
@@ -42,12 +42,12 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
             System.out.println(list);
         }
     }
-    ```
+```
 
 二.List转为Array
 
 1.实现：使用list.toArray()
-    ```java
+```java
     public class Array2List {
         public static void main(String[] args){
             List<String> list=new ArrayList<>();
@@ -60,4 +60,4 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
             }
         }
     }
-    ```
+```
