@@ -28,9 +28,9 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
 ```
   
 ### 注意事项 ###
-1）Arrays.asList()方法返回的对象是Arrays的内部类，对list的操作仍然反映在原数组上，因此这个list是定长的，不支持add、remove操作。
+(1)Arrays.asList()方法返回的对象是Arrays的内部类，对list的操作仍然反映在原数组上，因此这个list是定长的，不支持add、remove操作。
 
-2）由于asList方法接受的泛型参数，因此不能用于基本类型，只能使用如下方法：  
+(2)由于asList方法接受的泛型参数，因此不能用于基本类型，只能使用如下方法：  
 ```java
       public class Array2List {
         public static void main(String[] args){
@@ -46,7 +46,7 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
 
 二.List转为Array
 
-1.实现：使用list.toArray()
+(1)实现：使用list.toArray()
 ```java
     public class Array2List {
         public static void main(String[] args){
@@ -120,7 +120,7 @@ https://www.cnblogs.com/shamo89/p/9885779.html
     });
 ```
 
-(1)使用list自带的sort方法
+(2)使用list自带的sort方法
 ```java
     List<Integer> list = new ArrayLIst<>();
     list.add(12);
