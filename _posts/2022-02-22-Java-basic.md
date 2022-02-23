@@ -61,3 +61,20 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
         }
     }
 ```
+
+## 二、TreeMap 升序|降序排列
+https://www.cnblogs.com/shamo89/p/9885779.html
+```java
+    TreeMap<Integer,Integer> map1 = new TreeMap<Integer,Integer>();  // 默认的TreeMap升序排列
+    TreeMap<Integer,Integer> map2= new TreeMap<Integer,Integer>(new Comparator<Integer>(){ // 降序排列
+         /* 
+         * int compare(Object o1, Object o2) 返回一个基本类型的整型， 
+         * 返回负数表示：o1 小于o2， 
+         * 返回0 表示：o1和o2相等， 
+         * 返回正数表示：o1大于o2。 
+         */  
+        public int compare(Integer a,Integer b){
+            return b-a;            
+        }
+        });
+```
