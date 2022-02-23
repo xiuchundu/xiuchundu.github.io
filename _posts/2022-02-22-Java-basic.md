@@ -64,7 +64,7 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
 
 ## 二、TreeMap 升序|降序排序
 https://www.cnblogs.com/shamo89/p/9885779.html
-#(1)TreeMap升序降序排列
+(1)TreeMap升序降序排列
 ```java
     TreeMap<Integer,Integer> map1 = new TreeMap<Integer,Integer>();  // 默认的TreeMap升序排列
     TreeMap<Integer,Integer> map2= new TreeMap<Integer,Integer>(new Comparator<Integer>(){ // 降序排列
@@ -80,7 +80,7 @@ https://www.cnblogs.com/shamo89/p/9885779.html
         });
 ```
 
-#(1)TreeMap按照value排序
+(2)TreeMap按照value排序
     TreeMap底层是根据红黑树的数据结构构建的，默认是根据key的自然排序来组织（比如integer的大小，String的字典排序）。所以，TreeMap只能根据key来排序，是不能根据value来排序的（否则key来排序根本就不能形成TreeMap）。
 
 今天有个需求，就是要根据treeMap中的value排序。所以网上看了一下，大致的思路是把TreeMap的EntrySet转换成list，然后使用Collections.sor排序。代码：
