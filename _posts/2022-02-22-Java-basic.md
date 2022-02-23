@@ -107,3 +107,26 @@ https://www.cnblogs.com/shamo89/p/9885779.html
             }
         }
  ```
+
+## 三、list排序
+(1)使用Collections.sort()
+```java
+    List<Integer> list = new ArrayLIst<>();
+    list.add(12);
+    list.add(13);
+    list.add(3);
+    Collections.sort(list, (o1, o2) -> {
+        return o2 - o1;
+    });
+```
+
+(1)使用list自带的sort方法
+```java
+    List<Integer> list = new ArrayLIst<>();
+    list.add(12);
+    list.add(13);
+    list.add(3);
+    list.sort((o1, o2) -> {
+        return o2 - o1;
+    });
+```
