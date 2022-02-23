@@ -98,12 +98,12 @@ https://www.cnblogs.com/shamo89/p/9885779.html
             Collections.sort(list,new Comparator<Map.Entry<String,String>>() {
                 //升序排序
                 public int compare(Entry<String, String> o1, Entry<String, String> o2) {
-                    return o1.getValue().compareTo(o2.getValue());
+                    return o1.getValue().compareTo(o2.getValue()); // 字符串比较使用a.compareTo(b)
                 }
             });
 
             for (Entry<String, String> e: list) {
-                System.out.println(e.getKey()+":"+e.getValue());
+                System.out.println(e.getKey() + ":" + e.getValue());
             }
         }
  ```
