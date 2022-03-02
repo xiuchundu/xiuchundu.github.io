@@ -130,3 +130,15 @@ https://www.cnblogs.com/shamo89/p/9885779.html
         return o2 - o1;
     });
 ```
+
+## 四、数组的的骚操作
+(1) 取子数组
+```java
+    int[] cal = new int[5];
+    int [] newInt =Arrays.copyOfRange(cal, 1, 2);
+```
+(2) 数组求和
+```java
+    int[] cal = new int[5];
+    int sum = Arrays.stream(cal).sum();
+```
