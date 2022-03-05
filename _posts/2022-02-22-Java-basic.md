@@ -142,3 +142,15 @@ https://www.cnblogs.com/shamo89/p/9885779.html
     int[] cal = new int[5];
     int sum = Arrays.stream(cal).sum();
 ```
+
+## 五、队列
+学习链接：https://blog.csdn.net/JackComeOn/article/details/85455735
+(1) 双向队列
+```java
+    Deque<Integer> deue = new LinkList();
+    Deque<Integer> deue = new ArrayDeque();
+    ArrayDeque采用数组的实现方式，LinkedList采用链表的实现方法。如果数据量较大，则使用LinkedList，否则优先使用ArrayDeque.
+    pollLast和offerLast分别表示从尾部弹出、插入。
+    peekFirst、peekLast分别表示获取队列中队首、队尾的第一个元素。
+    poolFirst、offerFirst分别表示从队列的队首弹出、插入一个元素。
+```
