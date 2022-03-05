@@ -145,6 +145,7 @@ https://www.cnblogs.com/shamo89/p/9885779.html
 
 ## 五、队列
 学习链接：https://blog.csdn.net/JackComeOn/article/details/85455735
+
 (1) 双向队列
 ```java
     Deque<Integer> deue = new LinkList();
