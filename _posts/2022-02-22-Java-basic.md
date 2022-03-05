@@ -155,3 +155,7 @@ https://www.cnblogs.com/shamo89/p/9885779.html
     peekFirst、peekLast分别表示获取队列中队首、队尾的第一个元素。
     poolFirst、offerFirst分别表示从队列的队首弹出、插入一个元素。
 ```
+
+## 六、Java比较器
+学习链接：
+https://blog.csdn.net/wo8vqj68/article/details/81164163
