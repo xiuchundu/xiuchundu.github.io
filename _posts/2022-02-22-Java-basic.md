@@ -186,3 +186,90 @@ leetcode_239 使用比较器
 ## 六、Java比较器
 学习链接：
 https://blog.csdn.net/wo8vqj68/article/details/81164163
+
+```java
+    public class Main {
+
+        public static void main(String[] args) {
+        // write your code here
+            int[] a = new int[]{2,4};
+            System.out.println(a[0]);
+
+
+            HashMap<Integer, Integer> map = new HashMap<>();
+            map.put(1,2);
+            map.put(2,32);
+            for (Integer i : map.keySet()) {
+                System.out.println(i);
+            }
+
+            Room room1 = new Room(2,2,10);
+            Room room2 = new Room(2,1,10);
+            Room room3 = new Room(3,2,20);
+            Room room4 = new Room(3,1,15);
+            Room room5 = new Room(3,1,25);
+            List<Room> list = new ArrayList<>();
+            List<Room1> list1 = new ArrayList<>();
+            list.add(room1);
+            list.add(room2);
+            list.add(room3);
+            list.add(room4);
+            list.add(room5);
+            Collections.sort(list);
+
+            list1.add(new Room1(2,2,10));
+            list1.add(new Room1(2,1,10));
+            list1.add(new Room1(3,2,20));
+            list1.add(new Room1(3,1,15));
+            list1.add(new Room1(3,1,25));
+            Collections.sort(list1, new Comparator<Room1>() {
+                @Override
+                public int compare(Room1 o1, Room1 o2) {
+                    if (o1.length == o2.length) {
+                        if (o1.width != o2.width) {
+                            return o1.width - o2.width;
+                        }
+
+                        return o1.price - o2.price;
+                    }
+                    return o1.length - o2.length;
+            }});
+            System.out.println(list);
+        }
+
+        public static class Room1 {
+            public int length;
+            public int width;
+            public int price;
+            public Room1(int length, int width, int price) {
+                this.length = length;
+                this.width = width;
+                this.price = price;
+            }
+        }
+
+        public static class Room implements Comparable<Room> {
+            public int length;
+            public int width;
+            public int price;
+            public Room(int length, int width, int price) {
+                this.length = length;
+                this.width = width;
+                this.price = price;
+            }
+
+            @Override
+            public int compareTo(Room o) {
+                if (this.length == o.length) {
+                    if (this.width != o.width) {
+                        return this.width - o.width;
+                    }
+
+                    return this.price - o.price;
+                }
+
+                return this.length - o.length;
+            }
+        }
+    }
+```
