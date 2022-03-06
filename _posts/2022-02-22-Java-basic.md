@@ -158,6 +158,7 @@ https://www.cnblogs.com/shamo89/p/9885779.html
 
 
 (2) 优先级队列
+leetcode_239 使用比较器
 ```java
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
