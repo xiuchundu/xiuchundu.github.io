@@ -273,7 +273,7 @@ https://blog.csdn.net/wo8vqj68/article/details/81164163
         }
     }
 ```
-## 七、stream简单实用
+## 七、stream简单使用
 
 ```java
         HashMap<Integer, Test> roomDb = new HashMap<>();
