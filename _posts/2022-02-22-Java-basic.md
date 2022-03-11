@@ -142,6 +142,12 @@ https://www.cnblogs.com/shamo89/p/9885779.html
     int[] cal = new int[5];
     int sum = Arrays.stream(cal).sum();
 ```
+(3) 数组排序(正序、反序)
+```java
+    Integer[] arr = {1, 22, 3};
+    List<Integer> aa = Arrays.stream(arr).sorted(Comparator.naturalOrder()).collect(Collectors.toList());
+    List<Integer> bb = Arrays.stream(arr).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+```
 
 ## 五、队列
 学习链接：https://blog.csdn.net/JackComeOn/article/details/85455735
