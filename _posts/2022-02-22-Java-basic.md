@@ -145,8 +145,8 @@ https://www.cnblogs.com/shamo89/p/9885779.html
 (3) 数组排序(正序、反序)
 ```java
     Integer[] arr = {1, 22, 3};
-    List<Integer> aa = Arrays.stream(arr).sorted(Comparator.naturalOrder()).collect(Collectors.toList());
-    List<Integer> bb = Arrays.stream(arr).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+    List<Integer> aa = Arrays.stream(arr).sorted(Comparator.naturalOrder()).collect(Collectors.toList()); // 正序
+    List<Integer> bb = Arrays.stream(arr).sorted(Comparator.reverseOrder()).collect(Collectors.toList()); // 反序
 ```
 
 ## 五、队列
