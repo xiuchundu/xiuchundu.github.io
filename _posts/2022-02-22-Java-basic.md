@@ -273,3 +273,12 @@ https://blog.csdn.net/wo8vqj68/article/details/81164163
         }
     }
 ```
+### 七、stream简单实用
+```java
+        HashMap<Integer, Test> roomDb = new HashMap<>();
+        roomDb.put(1, new Test(1, 2,3));
+        roomDb.put(3, new Test(3, 1,2));
+        roomDb.put(4, new Test(23, 1,2));
+        List<Test> test = roomDb.values().stream().filter(rm ->rm.area >= 2).collect(Collectors.toList());
+        List<Integer> test1 = test.stream().map(Test::getArea).collect(Collectors.toList());
+```
