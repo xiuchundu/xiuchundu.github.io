@@ -148,6 +148,24 @@ https://www.cnblogs.com/shamo89/p/9885779.html
     List<Integer> aa = Arrays.stream(arr).sorted(Comparator.naturalOrder()).collect(Collectors.toList()); // 正序
     List<Integer> bb = Arrays.stream(arr).sorted(Comparator.reverseOrder()).collect(Collectors.toList()); // 反序
 ```
+(4) 二维数组排序
+方法一:
+```java
+	int[][] p={p1,p2,p3,p4};
+	Arrays.sort(p, new Comparator<int[]>() {
+	@Override
+	public int compare(int[] o1, int[] o2) {
+		return o2[0] == o1[0] ? o1[1] - o2[1] : o1[0] - o2[0];
+	}
+	});
+```
+
+方法二:
+```java
+	int[][] p={p1,p2,p3,p4};
+	Arrays.sort(p, (l1, l2) -> l2[0] == l1[0] ? l1[1] - l2[1] : l1[0] - l2[0]);
+```
+
 
 ## 五、队列
 学习链接：https://blog.csdn.net/JackComeOn/article/details/85455735
