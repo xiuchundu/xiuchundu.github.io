@@ -62,6 +62,15 @@ https://blog.csdn.net/lpq374606827/article/details/93203927
     }
 ```
 
+二.List转为Array
+
+数组转字符串
+```java
+	String str = "0,1,2,3,4,5";
+	String[] arr = str.split(","); // 用,分割
+	System.out.println(Arrays.toString(arr)); // [0, 1, 2, 3, 4, 5]
+```
+
 ## 二、TreeMap 升序|降序排序
 https://www.cnblogs.com/shamo89/p/9885779.html
 
