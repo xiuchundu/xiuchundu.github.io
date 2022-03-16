@@ -314,4 +314,7 @@ https://blog.csdn.net/wo8vqj68/article/details/81164163
         roomDb.put(4, new Test(23, 1,2));
         List<Test> test = roomDb.values().stream().filter(rm ->rm.area >= 2).collect(Collectors.toList());
         List<Integer> test1 = test.stream().map(Test::getArea).collect(Collectors.toList());
+	
+	Integer[] aa = new Integer[] {23, 11}; // 此处Integer不可写为int,否则下面的转为list会报错
+        List<Integer> ss = Arrays.stream(aa).filter(o -> o > 11).collect(Collectors.toList());
 ```
