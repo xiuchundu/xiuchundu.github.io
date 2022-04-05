@@ -227,7 +227,6 @@ https://blog.csdn.net/wo8vqj68/article/details/81164163
             int[] a = new int[]{2,4};
             System.out.println(a[0]);
 
-
             HashMap<Integer, Integer> map = new HashMap<>();
             map.put(1,2);
             map.put(2,32);
@@ -317,4 +316,13 @@ https://blog.csdn.net/wo8vqj68/article/details/81164163
 	
 	Integer[] aa = new Integer[] {23, 11}; // 此处Integer不可写为int,否则下面的转为list会报错
         List<Integer> ss = Arrays.stream(aa).filter(o -> o > 11).collect(Collectors.toList());
+```
+
+## 八、优先级队列转List
+示例如下：
+
+```java
+	Queue<List<Integer>> pri = new PriorityQueue<>(
+                (a, b) -> (b.get(0) + b.get(1)) - (a.get(0) + a.get(1)));
+	List<List<Integer>> ans = new ArrayList<>(pri);
 ```
